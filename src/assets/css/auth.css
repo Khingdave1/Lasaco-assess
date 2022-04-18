@@ -1,0 +1,77 @@
+/* Register Area */
+.auth {
+  width: 100%;
+  min-height: calc(100vh - 5rem);
+  background-color: var(--white-color);
+  display: flex;
+  /* overflow-y: scroll; */
+}
+.auth-content {
+  /* background-color: var(--white-color); */
+  padding: 1rem;
+  border-radius: 4px;
+  margin: auto;
+  width: 30%;
+  /* box-shadow: var(--box-shadow); */
+}
+@media only screen and (max-width: 870px) {
+  .auth-content {
+    width: 90%;
+  }
+}
+.auth-content-head {
+  margin-bottom: 2rem;
+}
+.auth-content-head p {
+  margin-bottom: 0.5rem;
+  color: var(--grey-color2);
+  font-weight: 500;
+}
+.auth-content-form {
+  display: grid;
+  grid-gap: 1rem;
+}
+.auth-content-form .form-control {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--grey-color1);
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+.auth-content-form .form-control:hover,
+.auth-content-form .form-control:active,
+.auth-content-form .form-control:focus {
+  border: 1px solid var(--primary-color);
+}
+.auth-content-form input {
+  width: 100%;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.auth-content-form .form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.auth-content-form .form-btn .btn {
+  width: 100%;
+}
+.auth-content-form .form-btn .btn:disabled {
+  background-color: var(--grey-color1);
+  color: var(--secondary-color);
+  border: transparent;
+}
+.auth-content-form .form-extra {
+  font-size: 15px;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+.auth-content-form .form-extra span:hover {
+  color: var(--yellow-color);
+}
