@@ -6,6 +6,11 @@ import { DriverComponent } from 'src/app/modules/driver/driver.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { UserComponent } from './user.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { QuestionsComponent } from 'src/app/modules/questions/questions.component';
+import { EntryLevelQuestionsComponent } from 'src/app/modules/entry-level-questions/entry-level-questions.component';
+import { InternQuestionsComponent } from 'src/app/modules/intern-questions/intern-questions.component';
+import { DriverQuestionsComponent } from 'src/app/modules/driver-questions/driver-questions.component';
 
 
 
@@ -14,12 +19,18 @@ import { UserComponent } from './user.component';
     UserComponent,
     EntryLevelComponent,
     InternComponent,
-    DriverComponent
+    DriverComponent,
+    QuestionsComponent,
+    EntryLevelQuestionsComponent,
+    InternQuestionsComponent,
+    DriverQuestionsComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class UserModule { }

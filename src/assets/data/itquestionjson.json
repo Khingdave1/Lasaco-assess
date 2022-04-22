@@ -1,0 +1,122 @@
+[
+  {
+    "question": "A person crosses a 600m long street in 5 minutes, at what speed in kmph is he moving?",
+    "option": [
+      {
+        "a": "3.6",
+        "b": "7.2",
+        "c": "8.4",
+        "d": "10"
+      }
+    ],
+    "answer": 3
+  },
+  {
+    "question": " What is the average (arithmetic mean) of  2x + 5,  5x – 6 and -4x + 2?",
+    "option": [
+      {
+        "a": "x + 1/3",
+        "b": "x + 1",
+        "c": "3x + 1/3",
+        "d": "3x + 3"
+      }
+    ],
+    "answer": 2
+  },
+  {
+    "question": "For every x ≠Θ, (x2 + x2 + x2)/ x2",
+    "option": [
+      {
+        "a": "3x",
+        "b": "3",
+        "c": "x2",
+        "d": "x3"
+      }
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Distance is ",
+    "option": [
+      {
+        "a": "Distance/Time",
+        "b": "Distance/speed",
+        "c": "Speed x Time",
+        "d": "None of these"
+      }
+    ],
+    "answer": 3
+  },
+  {
+    "question": "An aeroplane covers x km at a speed of 240kmph in 5 hours.  To cover the same distance in 12/3 hours, at what speed must it travel?",
+    "option": [
+      {
+        "a": "300kmph",
+        "b": "420kmph",
+        "c": "720kmph",
+        "d": "70km"
+      }
+    ],
+    "answer": 0
+  },
+  {
+    "question": "A train travels 50% faster than a car.  If they start at point A ad arrive at the same time at point B, which is 75km away.  Given that the train stops at stations in between both points for a total of 12.5minutes, what is the speed of the car?",
+    "option": [
+      {
+        "a": "100kmph",
+        "b": "110kmph",
+        "c": "120kmph",
+        "d": "130kmph"
+      }
+    ],
+    "answer": 2
+  },
+  {
+    "question": "In a triangle, if angle A = 70 degrees and C = 45 degrees, what is angle B?",
+    "option": [
+      {
+        "a": "50 degrees",
+        "b": "55 degrees",
+        "c": "60 degrees",
+        "d": "65degrees"
+      }
+    ],
+    "answer": 2
+  },
+  {
+    "question": "A bus travels at a speed of 54kmph, but due to a breakdown, stopped for some time before moving again.  If at the end of an hour it covers 45 km, for how long did it stop?",
+    "option": [
+      {
+        "a": "9 minutes",
+        "b": "10 minutes",
+        "c": "12 minutes",
+        "d": "11 minutes"
+      }
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Tickets are numbered 1 to 20 and mixed up.  If you draw one ticket from the pack, what is the probability that the ticket drawn has a number which is a multiple of 3 or 5?",
+    "option": [
+      {
+        "a": "1/2",
+        "b": "2/5",
+        "c": "8/15",
+        "d": "9/20"
+      }
+    ],
+    "answer": 2
+  },
+  {
+    "question": "A bag contains 2 red, 3 green and 2 blue balls.  Two balls are drawn at random, what is the probability that none of the balls drawn is blue?",
+    "option": [
+      {
+        "a": "10/21",
+        "b": "11/21",
+        "c": "2/7",
+        "d": "5/7"
+      }
+    ],
+    "answer": 2
+  }
+]

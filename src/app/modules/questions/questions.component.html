@@ -1,0 +1,30 @@
+<section class="sect">
+  <div class="container">
+    <div class="list">
+      <div class="list-item" *ngFor="let i of jsonDataResult">
+        <span class="serial-numb">1</span>
+        <span>
+          <h3>{{ i.question }}</h3>
+          <div class="options" *ngFor="let childItem of i.option">
+            <div class="input-field dis-flex">
+              <input type="radio" name="" id="" />
+              <p>{{ childItem.a }}</p>
+            </div>
+            <div class="input-field dis-flex">
+              <input type="radio" name="" id="" />
+              <p>{{ childItem.b }}</p>
+            </div>
+            <div class="input-field dis-flex">
+              <input type="radio" name="" id="" />
+              <p>{{ childItem.c }}</p>
+            </div>
+            <div class="input-field dis-flex">
+              <input type="radio" name="" id="" />
+              <p>{{ childItem.d }}</p>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>

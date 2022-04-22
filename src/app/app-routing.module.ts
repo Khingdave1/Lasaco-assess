@@ -2,10 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DefaultComponent } from './layouts/default/default.component';
 import { UserComponent } from './layouts/user/user.component';
+import { DriverQuestionsComponent } from './modules/driver-questions/driver-questions.component';
 import { DriverComponent } from './modules/driver/driver.component';
+import { EntryLevelQuestionsComponent } from './modules/entry-level-questions/entry-level-questions.component';
 import { EntryLevelComponent } from './modules/entry-level/entry-level.component';
 import { HomeComponent } from './modules/home/home.component';
+import { InternQuestionsComponent } from './modules/intern-questions/intern-questions.component';
 import { InternComponent } from './modules/intern/intern.component';
+import { QuestionsComponent } from './modules/questions/questions.component';
 
 const routes: Routes = [
   {
@@ -46,7 +50,39 @@ const routes: Routes = [
         path: 'driver',
         component: DriverComponent,
         data: {
-          title: 'driver',
+          title: 'Driver',
+          description: 'Description Meta Tag Content'
+        }
+      },
+      {
+        path: 'questions',
+        component: QuestionsComponent,
+        data: {
+          title: 'Questions',
+          description: 'Description Meta Tag Content'
+        }
+      },
+      {
+        path: 'entry-level-questions',
+        component: EntryLevelQuestionsComponent,
+        data: {
+          title: 'Entry Level Questions',
+          description: 'Description Meta Tag Content'
+        }
+      },
+      {
+        path: 'intern-questions',
+        component: InternQuestionsComponent,
+        data: {
+          title: 'Intern Questions',
+          description: 'Description Meta Tag Content'
+        }
+      },
+      {
+        path: 'driver-questions',
+        component: DriverQuestionsComponent,
+        data: {
+          title: 'Driver Questions',
           description: 'Description Meta Tag Content'
         }
       }
