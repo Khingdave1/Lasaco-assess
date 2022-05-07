@@ -9,6 +9,7 @@ import { ProfileService } from './profile.service';
 export class FirebaseService {
   isLogggedIn = false
   imageUrl = "https://res.cloudinary.com/djnqxvljr/image/upload/v1620660773/perlfood/assets/svg/bxs-user-circle_lpxmj4.svg"
+  testScore: number = 0;
 
   // currentUser: string;
   private currentUserSubject: BehaviorSubject<any>
@@ -43,16 +44,17 @@ export class FirebaseService {
     await this.firebaseAuth.createUserWithEmailAndPassword(email, password)
       .then(res => {
         let data = {
-          emailAddress: payload.emailAddress.toLowerCase(),
           fullName: payload.fullName,
-          userName: payload.userName,
+          emailAddress: payload.emailAddress.toLowerCase(),
           telNumber: payload.telNumber,
+          role: payload.role,
           imageUrl: this.imageUrl,
+          testScore: this.testScore,
           uid: res.user?.uid,
         }
 
         /** sends verification email **/
-        res.user?.sendEmailVerification();
+        // res.user?.sendEmailVerification();
 
         this.profileService.addUser(data)
 

@@ -12,6 +12,7 @@ import { UserModule } from './layouts/user/user.module';
 // import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
+import { AdminModule } from './layouts/admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     DefaultModule,
     UserModule,
+    AdminModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase)
     // provideFirebaseApp(() => initializeApp(environment.firebase)),

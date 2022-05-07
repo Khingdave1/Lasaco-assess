@@ -1,34 +1,90 @@
 <section class="sect">
   <div class="container">
-    <h3 class="instruct">Answer all {{ questions.length }} Questions</h3>
-    <div class="list">
-      <div
+    <div class="test-header">
+      <h3 class="instruct">Answer all {{ questionsList?.length }} Questions</h3>
+      <div class="test-header-footer dis-flex">
+        <p>Points: {{ point }}</p>
+        <p style="font-style: italic">
+          Question: {{ currentQuestion + 1 }} / {{ questionsList?.length }}
+        </p>
+        <p class="">TIme <i class="bx bx-stopwatch"></i>: {{ counter }}s</p>
+      </div>
+    </div>
+    <div class="test-body list">
+      <!-- <div
         class="list-item"
-        *ngFor="let i of questions; let indexOfelement = index"
+        *ngFor="let i of questionsList; let indexOfelement = index"
       >
         <span class="serial-numb">{{ indexOfelement + 1 }}</span>
         <span>
           <h4>{{ i.question }}</h4>
-          <div class="options" *ngFor="let childItem of i.option">
-            <div class="input-field dis-flex">
-              <input type="radio" name="" id="" />
-              <p>{{ childItem.a }}</p>
-            </div>
-            <div class="input-field dis-flex">
-              <input type="radio" name="" id="" />
-              <p>{{ childItem.b }}</p>
-            </div>
-            <div class="input-field dis-flex">
-              <input type="radio" name="" id="" />
-              <p>{{ childItem.c }}</p>
-            </div>
-            <div class="input-field dis-flex">
-              <input type="radio" name="" id="" />
-              <p>{{ childItem.d }}</p>
+          <div class="radiogroup options" *ngFor="let childItem of i.option">
+            <label class="input-field"
+              ><input
+                type="radio"
+                [name]="indexOfelement"
+                [value]="childItem.a"
+              />{{ childItem.a }}</label
+            >
+            <label class="input-field"
+              ><input
+                type="radio"
+                [name]="indexOfelement"
+                [value]="childItem.b"
+              />{{ childItem.b }}</label
+            >
+            <label class="input-field"
+              ><input
+                type="radio"
+                [name]="indexOfelement"
+                [value]="childItem.c"
+              />{{ childItem.c }}</label
+            >
+            <label class="input-field"
+              ><input
+                type="radio"
+                [name]="indexOfelement"
+                [value]="childItem.d"
+              />{{ childItem.d }}</label
+            >
+          </div>
+        </span>
+      </div> -->
+      <div class="list-item">
+        <span>
+          <h4>{{ questionsList[currentQuestion]?.questionText }}</h4>
+          <div
+            class="options"
+            *ngFor="let option of questionsList[currentQuestion]?.options"
+          >
+            <div
+              class="input-field"
+              (click)="answer(currentQuestion + 1, option)"
+            >
+              <p>{{ option.text }}</p>
             </div>
           </div>
         </span>
       </div>
+    </div>
+    <div class="test-footer dis-flex">
+      <button
+        [disabled]="currentQuestion === 0"
+        class="dis-flex"
+        (click)="previousQuestion()"
+      >
+        <i class="bx bx-chevron-left"></i> Previous
+      </button>
+      <button class="dis-flex" (click)="resetQuiz()">
+        Refresh <i class="bx bx-refresh"></i>
+      </button>
+      <button
+        class="dis-flex"
+        (click)="nextQuestion()"
+        [disabled]="currentQuestion + 1 === questionsList?.length"
+      >
+        Next <i class="bx bx-chevron-right"></i>
+      </button>
     </div>
   </div>
 </section>

@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminComponent } from './layouts/admin/admin.component';
 import { DefaultComponent } from './layouts/default/default.component';
 import { UserComponent } from './layouts/user/user.component';
+import { AdminLoginComponent } from './modules/admin-login/admin-login.component';
+import { CreateUserComponent } from './modules/create-user/create-user.component';
 import { DriverQuestionsComponent } from './modules/driver-questions/driver-questions.component';
 import { DriverComponent } from './modules/driver/driver.component';
 import { EntryLevelQuestionsComponent } from './modules/entry-level-questions/entry-level-questions.component';
@@ -15,6 +18,8 @@ const routes: Routes = [
   {
     path: '',
     component: DefaultComponent,
+    redirectTo: '',
+    pathMatch: 'full',
     children: [
       {
         path: '',
@@ -86,6 +91,28 @@ const routes: Routes = [
           description: 'Description Meta Tag Content'
         }
       }
+    ]
+  },
+  {
+    path: 'admin',
+    component: AdminComponent,
+    children: [
+      {
+        path: '',
+        component: AdminLoginComponent,
+        data: {
+          title: 'Admin Login',
+          description: 'Description Meta Tag Content'
+        }
+      },
+      {
+        path: 'create-user',
+        component: CreateUserComponent,
+        data: {
+          title: 'Create User',
+          description: 'Description Meta Tag Content'
+        }
+      },
     ]
   }
 ];
