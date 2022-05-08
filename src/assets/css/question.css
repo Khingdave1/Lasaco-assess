@@ -7,16 +7,24 @@
 .test-header {
   margin-bottom: 2rem;
 }
+.test-header-title {
+  margin-bottom: 0.5rem;
+}
+.test-header-instruct:not(:last-child) {
+  margin-bottom: 0.3rem;
+}
 .test-header-footer {
-  justify-content: space-between;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  text-align: center;
+  background-color: #c4c4c4;
+  padding: 0.5rem;
+  margin-top: 1rem;
 }
 .test-header-footer p {
   font-size: 20px;
   font-weight: 500;
-}
-.instruct {
-  margin-bottom: 2rem;
 }
 .list {
   display: grid;
@@ -47,9 +55,12 @@
 .options .input-field:hover {
   border-color: var(--primary-color);
 }
-.options .input-field input {
-  /* width: 100%; */
+/* .options .input-field input {
   margin-right: 0.5rem;
+} */
+.options .input-field.selected {
+  /* border-color: var(--primary-color); */
+  border-left: 2px solid var(--primary-color);
 }
 
 .test-footer {
@@ -62,10 +73,20 @@
   font-size: 18px;
   border-radius: 3px;
   padding: 0.5rem 0.8rem;
-  background-color: var(--primary-color);
-  color: var(--white-color);
   border: 1px solid transparent;
   transition: all 0.2s;
+  color: var(--white-color);
+}
+.test-footer button.carousel-btn {
+  background-color: var(--primary-color);
+}
+.test-footer button.submit-btn {
+  background-color: green;
+}
+.test-footer button.submit-btn:hover {
+  color: green;
+  background-color: var(--white-color);
+  border: 1px solid green;
 }
 button:not(:disabled) {
   cursor: pointer;
@@ -74,7 +95,7 @@ button:disabled {
   /* background-color: var(--primary-color); */
   background-color: #4070f4a6 !important;
 }
-.test-footer button:not(:disabled):hover {
+.test-footer button.carousel-btn:not(:disabled):hover {
   background-color: var(--white-color);
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
@@ -82,9 +103,6 @@ button:disabled {
 
 .test-footer button:not(:disabled):nth-child(1):hover i {
   transform: translateX(-5px);
-}
-.test-footer button:not(:disabled):nth-child(2):hover i {
-  transform: rotate(45deg);
 }
 .test-footer button:not(:disabled):nth-child(3):hover i {
   transform: translateX(5px);
@@ -96,7 +114,6 @@ button:disabled {
 .test-footer button:nth-child(1) i {
   margin-right: 0.2rem;
 }
-.test-footer button:nth-child(2) i,
 .test-footer button:nth-child(3) i {
   margin-left: 0.2rem;
 }

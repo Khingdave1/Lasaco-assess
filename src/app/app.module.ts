@@ -13,10 +13,12 @@ import { UserModule } from './layouts/user/user.module';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
 import { AdminModule } from './layouts/admin/admin.module';
+import { ChangeBgDirective } from './directives/change-bg.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ChangeBgDirective,
   ],
   imports: [
     BrowserModule,
