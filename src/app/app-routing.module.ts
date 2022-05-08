@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './layouts/admin/admin.component';
 import { DefaultComponent } from './layouts/default/default.component';
+import { AuthGuardService as AuthGuard } from './services/auth-guard.service';
 import { UserComponent } from './layouts/user/user.component';
 import { AdminLoginComponent } from './modules/admin-login/admin-login.component';
 import { CreateUserComponent } from './modules/create-user/create-user.component';
@@ -73,7 +74,8 @@ const routes: Routes = [
         data: {
           title: 'Entry Level Questions',
           description: 'Description Meta Tag Content'
-        }
+        },
+        canActivate: [AuthGuard]
       },
       {
         path: 'intern-questions',
@@ -81,7 +83,8 @@ const routes: Routes = [
         data: {
           title: 'Intern Questions',
           description: 'Description Meta Tag Content'
-        }
+        },
+        canActivate: [AuthGuard]
       },
       {
         path: 'driver-questions',
@@ -89,7 +92,8 @@ const routes: Routes = [
         data: {
           title: 'Driver Questions',
           description: 'Description Meta Tag Content'
-        }
+        },
+        canActivate: [AuthGuard]
       }
     ]
   },
@@ -111,14 +115,15 @@ const routes: Routes = [
         data: {
           title: 'Create User',
           description: 'Description Meta Tag Content'
-        }
+        },
+        canActivate: [AuthGuard]
       },
     ]
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
