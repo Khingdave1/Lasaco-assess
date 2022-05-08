@@ -4,6 +4,7 @@ import { QuestionService } from 'src/app/services/question.service';
 import { Router } from '@angular/router';
 import { ProfileService } from 'src/app/services/profile.service';
 import { Profile } from 'src/app/interfaces/profile';
+import { FirebaseService } from 'src/app/services/firebase.service';
 
 @Component({
   selector: 'app-entry-level-questions',
@@ -33,7 +34,7 @@ export class EntryLevelQuestionsComponent implements OnInit {
   users: any;
   user: any;
 
-  constructor(private http: HttpClient, private questionService: QuestionService, private router: Router, private profileService: ProfileService) {
+  constructor(private http: HttpClient, private questionService: QuestionService, private router: Router, private profileService: ProfileService, private firebaseService: FirebaseService) {
   }
 
   ngOnInit(): void {
@@ -117,7 +118,7 @@ export class EntryLevelQuestionsComponent implements OnInit {
 
     // Route back to home page
     setTimeout(() => {
-      this.router.navigate(['/'])
+      this.logOut()
     }, 30000);
   }
 
@@ -159,6 +160,14 @@ export class EntryLevelQuestionsComponent implements OnInit {
     }).catch(err => {
       console.log(err)
     })
+  }
+
+  // Sign User Out
+  logOut() {
+    this.firebaseService.signout()
+
+    // Return to Home page
+    this.router.navigate(['/'])
   }
 
   // Reset Counter
