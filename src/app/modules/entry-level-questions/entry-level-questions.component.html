@@ -2,7 +2,7 @@
   <div class="container">
     <ng-container *ngIf="!isTestCompleted">
       <div class="test-header">
-        <h3 class="test-header-title">Welcome David</h3>
+        <h3 class="test-header-title">Welcome {{ user?.fullName }}</h3>
         <p class="test-header-instruct">
           This quiz contains <b>{{ questionsList?.length }}</b> Questions. Each
           questions holds <b>{{ pointValue }}</b> points
@@ -20,61 +20,23 @@
         </div>
       </div>
       <div class="test-body list">
-        <!-- <div
-          class="list-item"
-        >
-            <h4>{{ questionsList[currentQuestion]?.questionText }}</h4>
-            <div class="radiogroup options" *ngFor="let childItem of i.option">
-              <label class="input-field"
-                ><input
-                  type="radio"
-                  [name]="indexOfelement"
-                  [value]="childItem.a"
-                />{{ childItem.a }}</label
-              >
-              <label class="input-field"
-                ><input
-                  type="radio"
-                  [name]="indexOfelement"
-                  [value]="childItem.b"
-                />{{ childItem.b }}</label
-              >
-              <label class="input-field"
-                ><input
-                  type="radio"
-                  [name]="indexOfelement"
-                  [value]="childItem.c"
-                />{{ childItem.c }}</label
-              >
-              <label class="input-field"
-                ><input
-                  type="radio"
-                  [name]="indexOfelement"
-                  [value]="childItem.d"
-                />{{ childItem.d }}</label
-              >
-            </div>
-          </span>
-        </div> -->
         <div class="list-item">
-          <span>
-            <h4>{{ questionsList[currentQuestion]?.questionText }}</h4>
-            <div
-              class="options"
+          <h4>{{ questionsList[currentQuestion]?.questionText }}</h4>
+          <div class="options">
+            <label
+              class="input-field"
               *ngFor="
                 let option of questionsList[currentQuestion]?.options;
                 let indexOfelement = index
               "
+              (click)="answer(currentQuestion + 1, option, $event)"
+              ><input
+                type="radio"
+                [name]="currentQuestion"
+                [value]="option.text"
+              />{{ option.text }}</label
             >
-              <div
-                class="input-field"
-                (click)="answer(currentQuestion + 1, option)"
-              >
-                <!-- [class.selected]="selected" -->
-                <p>{{ option.text }}</p>
-              </div>
-            </div>
-          </span>
+          </div>
         </div>
       </div>
       <div class="test-footer dis-flex">

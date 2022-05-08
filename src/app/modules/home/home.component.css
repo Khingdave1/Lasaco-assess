@@ -1,12 +1,14 @@
 /* Hero Starts */
 .hero {
-  background-image: url("../../../assets/img/hero-bg-4.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../../assets/img/hero-bg-2.jpg");
   background-position: center;
   background-size: cover;
+  color: var(--white-color);
   /* background-color: #2f4858;
   color: var(--white-color);
   padding: 5rem 0; */
-  max-height: calc(100vh - 5rem);
+  min-height: calc(100vh - 5rem);
 }
 .hero-details {
   animation: slideIn 2s cubic-bezier(0.5, 0, 0, 1);
@@ -49,8 +51,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: var(--secondary-color);
-  color: var(--white-color);
+  background-color: var(--white-color);
+  color: var(--secondary-color);
   border-radius: 5px;
   visibility: visible;
   transition: all 0.4s ease-in;

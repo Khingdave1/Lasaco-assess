@@ -55,9 +55,9 @@
 .options .input-field:hover {
   border-color: var(--primary-color);
 }
-/* .options .input-field input {
+.options .input-field input {
   margin-right: 0.5rem;
-} */
+}
 .options .input-field.selected {
   /* border-color: var(--primary-color); */
   border-left: 2px solid var(--primary-color);

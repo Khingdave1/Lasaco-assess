@@ -62,3 +62,16 @@
     </form>
   </div>
 </div>
+
+<div class="modal-area" [class.show-modal]="userDetailsPopup">
+  <div class="modal">
+    <div class="header dis-flex">
+      <h3>User Created!</h3>
+      <button class="btn prim-btn" (click)="closeModal()">Create New</button>
+    </div>
+    <div class="user-details">
+      <p><b>Email:</b> {{ userEmail }}</p>
+      <p><b>Password:</b> {{ userPassword }}</p>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,53 @@
 @import "../../../assets/css/auth.css";
+
+/* Modal starts */
+.modal-area {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 1rem;
+  background-color: #f2f5f6a4;
+  display: flex;
+  z-index: 150;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 500ms ease-in-out;
+  overflow-y: scroll;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+}
+.modal-area::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-area.show-modal {
+  opacity: 1;
+  visibility: visible;
+}
+.modal {
+  background-color: var(--white-color);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  margin: auto;
+  width: 30%;
+  box-shadow: var(--box-shadow);
+}
+@media only screen and (max-width: 870px) {
+  .modal {
+    width: 90%;
+  }
+}
+.header {
+  justify-content: space-between;
+  gap: 1rem;
+}
+.user-details {
+  margin-top: 1rem;
+}
+.user-details p:not(:last-child) {
+  margin-bottom: 0.5rem;
+}

@@ -10,6 +10,10 @@ export class FirebaseService {
   isLogggedIn = false
   imageUrl = "https://res.cloudinary.com/djnqxvljr/image/upload/v1620660773/perlfood/assets/svg/bxs-user-circle_lpxmj4.svg"
   testScore: number = 0;
+  totalQuestionsAttempted: number = 0;
+  totalCorrectAnswered: number = 0;
+  totalWrongAnswered: number = 0;
+  scorePercentage: number = 0;
 
   // currentUser: string;
   private currentUserSubject: BehaviorSubject<any>
@@ -50,6 +54,10 @@ export class FirebaseService {
           role: payload.role,
           imageUrl: this.imageUrl,
           testScore: this.testScore,
+          totalQuestionsAttempted: this.totalQuestionsAttempted,
+          totalCorrectAnswered: this.totalCorrectAnswered,
+          totalWrongAnswered: this.totalWrongAnswered,
+          scorePercentage: this.scorePercentage,
           uid: res.user?.uid,
         }
 

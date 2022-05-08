@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { QuestionService } from 'src/app/services/question.service';
-import { interval } from 'rxjs';
 import { Router } from '@angular/router';
+import { ProfileService } from 'src/app/services/profile.service';
+import { Profile } from 'src/app/interfaces/profile';
 
 @Component({
   selector: 'app-entry-level-questions',
@@ -28,13 +29,26 @@ export class EntryLevelQuestionsComponent implements OnInit {
   testDurationMinute: number = 30;
   display: any;
   interval: any;
+  userId: any;
+  users: any;
+  user: any;
 
-  constructor(private http: HttpClient, private questionService: QuestionService, private router: Router) {
+  constructor(private http: HttpClient, private questionService: QuestionService, private router: Router, private profileService: ProfileService) {
   }
 
   ngOnInit(): void {
     this.getAllQuestions()
     this.startTimer()
+
+    // Get single User Informations
+    this.userId = JSON.parse(localStorage.getItem('id') || '{}')
+    this.users = this.profileService.getSingleUser(this.userId).subscribe((res: any) => {
+      res.forEach((r: any) => {
+        let item = r.payload.doc.data() as Profile
+        item.id = r.payload.doc.id
+        this.user = item
+      });
+    })
 
   }
 
@@ -54,7 +68,9 @@ export class EntryLevelQuestionsComponent implements OnInit {
   }
 
   // When User select an answer
-  answer(currentQno: number, option: any) {
+  answer(currentQno: number, option: any, event: any) {
+    // var element = event.currentTarget;
+    // element.classList.add("selected")
     // If last question
     if (currentQno === this.questionsList.length) {
       this.currentQuestion--
@@ -95,6 +111,10 @@ export class EntryLevelQuestionsComponent implements OnInit {
     this.isTestCompleted = true
     this.pauseTimer()
     this.pointsPercentage = (this.points / this.totalPoints) * 100
+
+    // Update user profile
+    this.updateUserProfile()
+
     // Route back to home page
     setTimeout(() => {
       this.router.navigate(['/'])
@@ -123,6 +143,22 @@ export class EntryLevelQuestionsComponent implements OnInit {
   pauseTimer() {
     clearInterval(this.interval);
     this.testDuration = 0
+  }
+
+  // Update User profile
+  updateUserProfile() {
+    let payload = {
+      testScore: this.points,
+      totalQuestionsAttempted: this.totalAttemptedQuestion,
+      totalCorrectAnswered: this.correctAnswer,
+      totalWrongAnswered: this.inCorrectAnswer,
+      scorePercentage: this.pointsPercentage,
+    }
+
+    this.profileService.updateUser(this.user.id, payload).then(res => {
+    }).catch(err => {
+      console.log(err)
+    })
   }
 
   // Reset Counter

@@ -21,6 +21,9 @@ export class CreateUserComponent implements OnInit {
   error = '';
   isSignedin: boolean = false;
   errorMessage: string = "";
+  userDetailsPopup: boolean = false;
+  userEmail: string = "";
+  userPassword: string = "";
 
   roles: Role[] = [
     { value: "", viewValue: "Select Role:" },
@@ -66,8 +69,13 @@ export class CreateUserComponent implements OnInit {
       password: this.createUserForm.value.password
     }
 
+    // Set User details
+    this.userEmail = payload.emailAddress
+    this.userPassword = payload.password
+
     await this.firebaseService.createUser(payload.emailAddress, payload.password, payload)
       .then(res => {
+
 
       }).catch(err => {
         this.errorMessage = err.message
@@ -76,10 +84,19 @@ export class CreateUserComponent implements OnInit {
 
     if (this.firebaseService.isLogggedIn === true) {
       this.isSignedin = true
+      this.userDetailsPopup = true
       // Navigate to Dashboard
-      this.router.navigate(['admin/create-user'])
+      // this.router.navigate(['admin/create-user'])
       // alert('Welcome ' + payload.emailAddress)
     }
+  }
+
+  // Close Modal
+  closeModal() {
+    this.userDetailsPopup = false
+    // Clear form
+    // this.createUserForm.reset()
+    window.location.reload();
   }
 
 }
