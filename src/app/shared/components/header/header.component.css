@@ -27,10 +27,9 @@
   margin-right: 1.5rem;
 }
 .nav-list .nav-item {
-  position: relative;
+  transition: all 0.2s;
 }
-.nav-list .nav-item.active::after {
-  top: 3.2rem;
-  background-color: var(--primary-color);
+.nav-list .nav-item:hover {
+  color: var(--primary-color);
 }
 /* Header ends */

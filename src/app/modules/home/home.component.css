@@ -9,6 +9,7 @@
   color: var(--white-color);
   padding: 5rem 0; */
   min-height: calc(100vh - 5rem);
+  position: relative;
 }
 .hero-details {
   animation: slideIn 2s cubic-bezier(0.5, 0, 0, 1);
@@ -79,6 +80,21 @@
 }
 /* ba card ends */
 /* Cards ends */
+
+/* Admin lin starts */
+.admin-link {
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  transition: all 0.2s;
+}
+.admin-link:hover {
+  color: var(--primary-color);
+}
+/* Admin lin ends */
 
 /* Keyframes */
 @keyframes slideIn {
