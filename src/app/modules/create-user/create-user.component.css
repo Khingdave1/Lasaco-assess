@@ -51,3 +51,12 @@
 .user-details p:not(:last-child) {
   margin-bottom: 0.5rem;
 }
+
+.go-back {
+  margin-top: 2rem;
+  text-align: center;
+  transition: all 0.2s;
+}
+.go-back:hover {
+  color: var(--primary-color);
+}

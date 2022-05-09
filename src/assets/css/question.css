@@ -121,3 +121,20 @@ button:disabled {
 i {
   vertical-align: middle;
 }
+
+/* Test Result Container starts */
+.test-result-container {
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.test-result-container img {
+  max-width: 200px;
+  height: auto;
+}
+.test-result-container h3 {
+  margin-bottom: 0.5rem;
+}
+.test-result-container p:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+/* Test Result Container ends */
