@@ -59,7 +59,7 @@ export class EntryLevelQuestionsComponent implements OnInit {
       this.result = res
 
       // Number of Questions
-      const size = 5
+      const size = 15
       this.allQuestionsList = this.result.questions;
       // Display n random questions from the QuestionList
       this.questionsList = this.allQuestionsList.sort(() => Math.random() - Math.random()).slice(0, size)

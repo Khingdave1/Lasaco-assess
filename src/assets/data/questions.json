@@ -1,175 +1,616 @@
 {
   "questions": [
     {
-      "questionText": "Which of the following does TypeScript use to specify types?",
+      "questionText": "If a = 3 and b = -2, what is the value of a2 + 3ab – b2?",
       "options": [
         {
-          "text": ":",
+          "text": "5"
+        },
+        {
+          "text": "-13",
           "correct": true
         },
         {
-          "text": ";"
+          "text": "-4"
         },
         {
-          "text": "!"
-        },
-        {
-          "text": "&"
+          "text": "10"
         }
-      ],
-      "explanation": "TS uses a colon (:) to separate the property name from the property type"
+      ]
     },
     {
-      "questionText": "Which of the following is NOT a type used in TypeScript?",
+      "questionText": " 34 is what percent of 80?",
       "options": [
         {
-          "text": "number"
+          "text": "34%"
         },
         {
-          "text": "string"
+          "text": "40%"
         },
         {
-          "text": "boolean"
-        },
-        {
-          "text": "enum",
+          "text": "42.5%",
           "correct": true
+        },
+        {
+          "text": "44.5%"
         }
-      ],
-      "explanation": "enum is not used as a type in TypeScript"
+      ]
     },
     {
-      "questionText": "How can we specify properties and methods for an object in TypeScript?",
+      "questionText": "Jack and Kevin play in a basketball game. If the ratio of points scored by Jack to points scored by Kevin is 4 to 3, which of the following could NOT be the total number of points scored by the two boys?",
       "options": [
         {
-          "text": "Use classes."
+          "text": "7"
         },
         {
-          "text": "Use interfaces.",
+          "text": "14"
+        },
+        {
+          "text": "16",
           "correct": true
         },
         {
-          "text": "Use enums."
-        },
-        {
-          "text": "Use async/await."
+          "text": "28"
         }
-      ],
-      "explanation": "interfaces are typically used to list the properties and methods for an object"
+      ]
     },
     {
-      "questionText": "How else can Array<number> be written in TypeScript?",
+      "questionText": "Factor the following expression: x2 + x – 12",
       "options": [
         {
-          "text": "@number"
+          "text": "(x – 4) (x + 4)"
         },
         {
-          "text": "number[]",
+          "text": "(x – 2) (x + 6)"
+        },
+        {
+          "text": "(x + 6) (x – 2)"
+        },
+        {
+          "text": "(x + 4) (x – 3)",
           "correct": true
-        },
-        {
-          "text": "number!"
-        },
-        {
-          "text": "number?"
         }
-      ],
-      "explanation": "number[] is another way of writing Array<number> in TypeScript"
+      ]
     },
     {
-      "questionText": "In which of these does a class take parameters?",
+      "questionText": "The average of six numbers is 4. If the average of two of those numbers is 2, what is the average of the other four numbers?",
       "options": [
         {
-          "text": "constructor",
+          "text": "5",
           "correct": true
         },
         {
-          "text": "destructor"
+          "text": "6"
         },
         {
-          "text": "import"
+          "text": "7"
         },
         {
-          "text": "subscribe"
+          "text": "8"
         }
-      ],
-      "explanation": "a constructor is used by a class to take in parameters"
+      ]
     },
     {
-      "questionText": "Which is NOT an access modifier?",
+      "questionText": "What is the next-highest prime number after 67?",
       "options": [
         {
-          "text": "private"
+          "text": "68"
         },
         {
-          "text": "protected"
+          "text": "69"
         },
         {
-          "text": "public"
-        },
-        {
-          "text": "async",
+          "text": "71",
           "correct": true
+        },
+        {
+          "text": "73"
         }
-      ],
-      "explanation": "async is not used as an access modifier type in TypeScript"
+      ]
     },
     {
-      "questionText": "Which keyword allows us to share information between files in TypeScript?",
+      "questionText": "Solve: 0.25 x 0.03 =",
       "options": [
         {
-          "text": "import"
+          "text": "75"
         },
         {
-          "text": "export",
+          "text": "0.075"
+        },
+        {
+          "text": "0.75"
+        },
+        {
+          "text": "0.0075",
           "correct": true
-        },
-        {
-          "text": "async"
-        },
-        {
-          "text": "constructor"
         }
-      ],
-      "explanation": "the export keyword allows for the information to be transmitted between files"
+      ]
     },
     {
-      "questionText": "Which is an array method to generate a new array based on a condition?",
+      "questionText": "Dean’s Department Store reduces the price of a $30 shirt by 20%, but later raises it again by 20% of the sale price. What is the final price of the shirt?",
       "options": [
         {
-          "text": "filter",
+          "text": "$24.40"
+        },
+        {
+          "text": "$32"
+        },
+        {
+          "text": "$30"
+        },
+        {
+          "text": "$28.80",
           "correct": true
-        },
-        {
-          "text": "map"
-        },
-        {
-          "text": "async"
-        },
-        {
-          "text": "enum"
         }
-      ],
-      "explanation": "filter is a method used to conditionally create a new array"
+      ]
     },
     {
-      "questionText": "How is a property accessible within a class?",
+      "questionText": "How many 3-inch segments can a 4.5-yard line be divided into?",
       "options": [
         {
-          "text": "Using this.propertyName",
+          "text": "15"
+        },
+        {
+          "text": "45"
+        },
+        {
+          "text": "54",
           "correct": true
         },
         {
-          "text": "Accessors"
-        },
-        {
-          "text": "Destructuring"
-        },
-        {
-          "text": "Arrow function"
+          "text": "64"
         }
-      ],
-      "explanation": "this.propertyName is the way to access a specific property within a class"
+      ]
+    },
+    {
+      "questionText": "Sheila, Janice, and Karen, working together at the same rate, can complete a job in 3 1/3 days. Working at the same rate, how much of the job could Janice and Karen do in one day?",
+      "options": [
+        {
+          "text": "1/5",
+          "correct": true
+        },
+        {
+          "text": "1/4"
+        },
+        {
+          "text": "1/3"
+        },
+        {
+          "text": "1/9"
+        }
+      ]
+    },
+    {
+      "questionText": "Dave can deliver four newspapers every minute. At this rate, how many newspapers can he deliver in 2 hours?",
+      "options": [
+        {
+          "text": "80"
+        },
+        {
+          "text": "160"
+        },
+        {
+          "text": "320"
+        },
+        {
+          "text": "480",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": ". 4^6 / 2^8",
+      "options": [
+        {
+          "text": "2"
+        },
+        {
+          "text": "8"
+        },
+        {
+          "text": "16",
+          "correct": true
+        },
+        {
+          "text": "32"
+        }
+      ]
+    },
+    {
+      "questionText": "If a = 4, b = 3, and c = 1, then (a(b-c))/b(a+b+c) ",
+      "options": [
+        {
+          "text": "4/13"
+        },
+        {
+          "text": "1/3",
+          "correct": true
+        },
+        {
+          "text": "1/4"
+        },
+        {
+          "text": "1/6"
+        }
+      ]
+    },
+    {
+      "questionText": "What is 20% of 12/5 , expressed as a percentage?",
+      "options": [
+        {
+          "text": "48%",
+          "correct": true
+        },
+        {
+          "text": "65%"
+        },
+        {
+          "text": "72%"
+        },
+        {
+          "text": "76%"
+        }
+      ]
+    },
+    {
+      "questionText": "Archie’s gas tank is 1/3 full. If Archie adds 3 gallons of gas to the tank, it will be ½ full. What is the capacity in gallons of Archie’s tank?",
+      "options": [
+        {
+          "text": "28"
+        },
+        {
+          "text": "12"
+        },
+        {
+          "text": "18",
+          "correct": true
+        },
+        {
+          "text": "20"
+        }
+      ]
+    },
+    {
+      "questionText": "Does Jonathan get paid more than Deborah? (1)Alice gets paid more than Deborah. (2)Jonathan makes less money than Alice.",
+      "options": [
+        {
+          "text": "Statement (1) ALONE is sufficient, but statement (2) is not sufficient."
+        },
+        {
+          "text": "Statement (2) ALONE is sufficient, but statement (1) is not sufficient."
+        },
+        {
+          "text": "Statements (1) and (2) TOGETHER are NOT sufficient.",
+          "correct": true
+        },
+        {
+          "text": "EACH statement ALONE is sufficient"
+        }
+      ]
+    },
+    {
+      "questionText": "Is the integer a less than the integer b? (1)a3 < b3. (2)a2 < b2.",
+      "options": [
+        {
+          "text": "Statement (1) ALONE is sufficient, but statement (2) is not sufficient.",
+          "correct": true
+        },
+        {
+          "text": "Statement (2) ALONE is sufficient, but statement (1) is not sufficient."
+        },
+        {
+          "text": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient."
+        },
+        {
+          "text": "EACH statement ALONE is sufficient."
+        }
+      ]
+    },
+    {
+      "questionText": "Is the perimeter of a given rectangle greater than 8 inches? (1)The two shorter sides of the rectangle are 2 inches long. (2)The length of the rectangle is 2 inches greater than the width of the",
+      "options": [
+        {
+          "text": "Statement (1) ALONE is sufficient, but statement (2) is not sufficient.",
+          "correct": true
+        },
+        {
+          "text": "Statement (2) ALONE is sufficient, but statement (1) is not sufficient."
+        },
+        {
+          "text": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient."
+        },
+        {
+          "text": "EACH statement ALONE is sufficient."
+        }
+      ]
+    },
+    {
+      "questionText": "Is a an integer? (1)a > 0. (2) 42 + 32 = a2",
+      "options": [
+        {
+          "text": "Statement (1) ALONE is sufficient, but statement (2) is not sufficient."
+        },
+        {
+          "text": "Statement (2) ALONE is sufficient, but statement (1) is not sufficient.",
+          "correct": true
+        },
+        {
+          "text": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient."
+        },
+        {
+          "text": "EACH statement ALONE is sufficient."
+        }
+      ]
+    },
+    {
+      "questionText": "What is the value of the integer P? (1)P is an integer multiple of 2, 4, and 5. (2)40 < P < 70",
+      "options": [
+        {
+          "text": "Statement (1) ALONE is sufficient, but statement (2) is not sufficient."
+        },
+        {
+          "text": "Statement (2) ALONE is sufficient, but statement (1) is not sufficient."
+        },
+        {
+          "text": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "correct": true
+        },
+        {
+          "text": "EACH statement ALONE is sufficient."
+        }
+      ]
+    },
+    {
+      "questionText": "Brian is dividing 50 marbles into 3 groups. How many marbles are in the largest of the three groups? (1)The sum of the two smaller groups of marbles is equal to the largest group of marbles. (2)The smallest group contains 6 marbles.",
+      "options": [
+        {
+          "text": "Statement (1) ALONE is sufficient, but statement (2) is not sufficient.",
+          "correct": true
+        },
+        {
+          "text": "Statement (2) ALONE is sufficient, but statement (1) is not sufficient."
+        },
+        {
+          "text": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient."
+        },
+        {
+          "text": "EACH statement ALONE is sufficient."
+        }
+      ]
+    },
+    {
+      "questionText": "Is x greater than y? (1)x > 2y. (2)x – y > 0",
+      "options": [
+        {
+          "text": "Statement (1) ALONE is sufficient, but statement (2) is not sufficient."
+        },
+        {
+          "text": "Statement (2) ALONE is sufficient, but statement (1) is not sufficient.",
+          "correct": true
+        },
+        {
+          "text": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient."
+        },
+        {
+          "text": "EACH statement ALONE is sufficient."
+        }
+      ]
+    },
+    {
+      "questionText": "What is the average test score of Angela, Barry, Carl, Dennis, and Edward? (1)The average of the test scores of Barry, Carl, and Edward is 87. (2)The average of the test scores of Angela and Dennis is 84",
+      "options": [
+        {
+          "text": "Statement (1) ALONE is sufficient, but statement (2) is not sufficient."
+        },
+        {
+          "text": "Statement (2) ALONE is sufficient, but statement (1) is not sufficient."
+        },
+        {
+          "text": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "correct": true
+        },
+        {
+          "text": "EACH statement ALONE is sufficient."
+        }
+      ]
+    },
+    {
+      "questionText": "If y is an integer, is it an odd number? (1)y3 ≥ 0 (2)y is either an odd number or a negative number",
+      "options": [
+        {
+          "text": "Statement (1) ALONE is sufficient, but statement (2) is not sufficient."
+        },
+        {
+          "text": "Statement (2) ALONE is sufficient, but statement (1) is not sufficient."
+        },
+        {
+          "text": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+          "correct": true
+        },
+        {
+          "text": "EACH statement ALONE is sufficient."
+        }
+      ]
+    },
+    {
+      "questionText": "The latest movie by a certain director gets bad reviews before it opens in theatres. Consequently, very few people go to the movie and the director is given much less money to make his next movie, which is also unsuccessful.What can be inferred from this scenario?",
+      "options": [
+        {
+          "text": "This director makes terrible movies."
+        },
+        {
+          "text": "The general public does not pay attention to movie reviews."
+        },
+        {
+          "text": "The movie reviewers were right about the first movie."
+        },
+        {
+          "text": "Movie reviewers exert influence on the movie quality.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "The most important determinant of success in life is education. Even children from broken or dysfunctional homes tend to establish themselves as solid citizens so long as they obtain a high school education. On the other hand, children who fail to earn a high school diploma are much less likely to avoid prison, welfare, or divorce.Which of the following statements most effectively strengthens the above argument?",
+      "options": [
+        {
+          "text": "A recent study demonstrated a link between education and lifetime earnings.",
+          "correct": true
+        },
+        {
+          "text": "Most federal prisoners receive a high school diploma while incarcerated."
+        },
+        {
+          "text": "Research indicates that college graduates from abusive homes are more likely to be arrested."
+        },
+        {
+          "text": "Individuals with heart problems are more likely to have postgraduate education."
+        }
+      ]
+    },
+    {
+      "questionText": "Shakespeare is the greatest writer of all time. This is because he wrote the greatest plays, and the greatest writer is the one who composes the greatest works.Which of the following statements most effectively challenges the reasoning above?",
+      "options": [
+        {
+          "text": "This argument disproves its own premise."
+        },
+        {
+          "text": "This argument uses ambiguous language."
+        },
+        {
+          "text": "This argument assumes what it claims to prove.",
+          "correct": true
+        },
+        {
+          "text": "This argument introduces irrelevant evidence."
+        }
+      ]
+    },
+    {
+      "questionText": "In the 2000 local election, only 28% of individuals between the ages of 18 and 25 voted. In the 2004 local election, however, candidates made more of an effort to appeal to these younger voters, so turnout was slightly higher at 39%. Which of the following pieces of information weakens the above argument?",
+      "options": [
+        {
+          "text": "In 2004, a referendum on lowering the legal age for purchasing alcohol to 18 was on the ballot.",
+          "correct": true
+        },
+        {
+          "text": "The candidates for city council were ages 55, 72, and 64."
+        },
+        {
+          "text": "The turnout among voters between the ages of 35 and 44 was 42% in 2004."
+        },
+        {
+          "text": "Turnout among African-Americans between 18 and 25 decreased from 2000 to 2004."
+        }
+      ]
+    },
+    {
+      "questionText": "Members of Congress should not be paid. After all, members of the school board receive no payment, and are therefore not beholden to any particular group.Which of the following facts most significantly weakens the above argument?",
+      "options": [
+        {
+          "text": "Members of Congress can also serve on the school board."
+        },
+        {
+          "text": "Being in Congress is a full-time job, while school board members have time to pursue other occupations",
+          "correct": true
+        },
+        {
+          "text": "Congress only is in session during part of the year."
+        },
+        {
+          "text": "Members of Congress typically have been successful in their prior professional lives."
+        }
+      ]
+    },
+    {
+      "questionText": "All German cars are safe. Dale drives a German car, so his car is safe.Which of the following arguments contains logic that closely resembles that of the preceding argument?",
+      "options": [
+        {
+          "text": "The newest cars often get better gas mileage. Helen has a new car, which must get better gas mileage."
+        },
+        {
+          "text": "A few of the candidates for governor are women. Dr. Lopez is a woman."
+        },
+        {
+          "text": "No brands of natural peanut butter contain preservatives. The peanut butter in Dave’s cabinet contains preservatives."
+        },
+        {
+          "text": "Every shark has a tailfin. The hammerhead is a kind of shark and therefore has a tailfin",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "The Tigers football team usually loses when they score fewer than 30 points. In their game against the Wildcats, they scored 24 points.Which of the following statements would logically complete the argument with the above premises?",
+      "options": [
+        {
+          "text": "The Tigers probably lost to the Wildcats.",
+          "correct": true
+        },
+        {
+          "text": "The Tigers lost to the Wildcats."
+        },
+        {
+          "text": "The Wildcats are the best football team in the league."
+        },
+        {
+          "text": "The Tigers are not a very good football team."
+        }
+      ]
+    },
+    {
+      "questionText": "Dr. Jacobson stood up at the recent town hall meeting and declared that building a new shopping center at the corner of George and Vidalia Streets would be a bad move. He cited transportation department statistics indicating that the intersection would become overloaded with traffic, and would be very dangerous for motorists and pedestrians alike. The mayor dismissed Dr. Jacobson’s opinion, on the grounds that the proposed shopping center is within a block of Dr. Jacobson’s practice.Why is the mayor’s argument weak?",
+      "options": [
+        {
+          "text": "He does not challenge Dr. Jacobson’s argument, but merely challenges him personally.",
+          "correct": true
+        },
+        {
+          "text": "He does not acknowledge the location of his own office."
+        },
+        {
+          "text": "He fails to recognize that Dr. Jacobson would probably welcome a new shopping center near his practice."
+        },
+        {
+          "text": "He does not support his view with statistics from the transportation department."
+        }
+      ]
+    },
+    {
+      "questionText": "If he stops to consider the ramifications of this decision, it is probable that he will rethink his original decision a while longer.",
+      "options": [
+        {
+          "text": "it is probable that he will rethink his original decision."
+        },
+        {
+          "text": "he will rethink his original decision over again."
+        },
+        {
+          "text": "he probably will rethink his original decision.",
+          "correct": true
+        },
+        {
+          "text": "he will most likely rethink his original decision for a bit."
+        }
+      ]
+    },
+    {
+      "questionText": "Brian is dividing 50 marbles into 3 groups. How many marbles are in the largest of the three groups? (1)The sum of the two smaller groups of marbles is equal to the largest group of marbles. (2)The smallest group contains 6 marbles.",
+      "options": [
+        {
+          "text": "Statement (1) ALONE is sufficient, but statement (2) is not sufficient.",
+          "correct": true
+        },
+        {
+          "text": "Statement (2) ALONE is sufficient, but statement (1) is not sufficient."
+        },
+        {
+          "text": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient."
+        },
+        {
+          "text": "EACH statement ALONE is sufficient."
+        }
+      ]
     }
   ]
 }
