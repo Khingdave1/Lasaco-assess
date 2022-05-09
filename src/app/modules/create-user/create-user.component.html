@@ -52,6 +52,9 @@
           (click)="hide = !hide"
         />
       </div>
+      <!-- Warning -->
+      <p class="warning-msg">Password must be at least 6 characters</p>
+      <!-- Error -->
       <span class="rc">{{ errorMessage }}</span>
       <div class="form-btn">
         <button class="btn prim-btn clickable" (click)="createUser()">
