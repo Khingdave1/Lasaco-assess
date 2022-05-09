@@ -1,34 +1,82 @@
 <section class="sect">
   <div class="container">
-    <h3 class="instruct">Answer all {{ questions?.length }} Questions</h3>
-    <div class="list">
-      <div
-        class="list-item"
-        *ngFor="let i of questions; let indexOfelement = index"
-      >
-        <span class="serial-numb">{{ indexOfelement + 1 }}</span>
-        <span>
-          <h4>{{ i.question }}</h4>
-          <div class="options" *ngFor="let childItem of i.option">
-            <div class="input-field dis-flex">
-              <input type="radio" name="" id="" />
-              <p>{{ childItem.a }}</p>
-            </div>
-            <div class="input-field dis-flex">
-              <input type="radio" name="" id="" />
-              <p>{{ childItem.b }}</p>
-            </div>
-            <div class="input-field dis-flex">
-              <input type="radio" name="" id="" />
-              <p>{{ childItem.c }}</p>
-            </div>
-            <div class="input-field dis-flex">
-              <input type="radio" name="" id="" />
-              <p>{{ childItem.d }}</p>
-            </div>
-          </div>
-        </span>
+    <ng-container *ngIf="!isTestCompleted">
+      <div class="test-header">
+        <h3 class="test-header-title">Welcome {{ user?.fullName }}</h3>
+        <p class="test-header-instruct">
+          This quiz contains <b>{{ questionsList?.length }}</b> Questions. Each
+          questions holds <b>{{ pointValue }}</b> points
+        </p>
+        <p class="test-header-instruct">
+          You have <b>{{ testDurationMinute }} minutes</b> to complete this Test
+        </p>
+
+        <div class="test-header-footer">
+          <p>Total Points: {{ totalPoints }}</p>
+          <p style="font-style: italic">
+            Question: {{ currentQuestion + 1 }} / {{ questionsList?.length }}
+          </p>
+          <p class="">Time <i class="bx bx-stopwatch"></i>: {{ display }}s</p>
+        </div>
       </div>
-    </div>
+      <div class="test-body list">
+        <div class="list-item">
+          <h4>{{ questionsList[currentQuestion]?.questionText }}</h4>
+          <div class="options">
+            <label
+              class="input-field"
+              *ngFor="
+                let option of questionsList[currentQuestion]?.options;
+                let indexOfelement = index
+              "
+              (click)="answer(currentQuestion + 1, option, $event)"
+              ><input
+                type="radio"
+                [name]="currentQuestion"
+                [value]="option.text"
+              />{{ option.text }}</label
+            >
+          </div>
+        </div>
+      </div>
+      <div class="test-footer dis-flex">
+        <button
+          [disabled]="currentQuestion === 0"
+          class="carousel-btn dis-flex"
+          (click)="previousQuestion()"
+        >
+          <i class="bx bx-chevron-left"></i> Previous
+        </button>
+        <button class="submit-btn dis-flex" (click)="submitTest()">
+          Submit
+        </button>
+        <button
+          class="carousel-btn dis-flex"
+          (click)="nextQuestion()"
+          [disabled]="currentQuestion + 1 === questionsList?.length"
+        >
+          Next <i class="bx bx-chevron-right"></i>
+        </button>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="isTestCompleted">
+      <div class="test-result-container dis-flex">
+        <img src="../../../assets/img/33267160.jpg" alt="" />
+        <div class="test-rsult-details">
+          <h3>
+            Congratulations!!! You have completed the Test. <br />Below is your
+            result:
+          </h3>
+          <p>Total Questions Attempted: {{ totalAttemptedQuestion }}</p>
+          <p>Total Correct Answered: {{ correctAnswer }}</p>
+          <p>Total wrong Answered: {{ inCorrectAnswer }}</p>
+          <p>Your Score: {{ points }}</p>
+          <p>
+            Your Score percentage: <strong>{{ pointsPercentage }}%</strong>
+          </p>
+        </div>
+      </div>
+    </ng-container>
   </div>
 </section>
