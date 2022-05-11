@@ -37,19 +37,14 @@
 
 /* Cards starts */
 .card {
-  display: grid;
-  grid-gap: 2rem;
-}
-@media only screen and (min-width: 450px) {
-  .card {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 2rem;
 }
 .card-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  place-items: center;
   padding: 1rem;
   margin-top: 5rem;
   background-color: var(--white-color);
@@ -60,6 +55,12 @@
 }
 .card-item:hover {
   transform: translateY(10px);
+}
+@media only screen and (min-width: 450px) {
+  .card-item {
+    width: 250px;
+    flex-basis: auto;
+  }
 }
 .card-item .icon {
   width: 60px;
