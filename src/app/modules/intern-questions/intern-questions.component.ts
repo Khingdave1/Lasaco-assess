@@ -26,8 +26,8 @@ export class InternQuestionsComponent implements OnInit {
   selected: boolean = false;
   isTestCompleted: boolean = false;
   totalAttemptedQuestion: number = 0;
-  testDuration: number = 1800; //In seconds
-  testDurationMinute: number = 30;
+  testDuration: number = 3600; //In seconds
+  testDurationMinute: number = 1;
   display: any;
   interval: any;
   userId: any;
@@ -55,11 +55,11 @@ export class InternQuestionsComponent implements OnInit {
 
   // Get all Questions from Json
   getAllQuestions() {
-    this.questionService.getQuestionJson().subscribe((res) => {
+    this.questionService.getQuestionJson('itquestion').subscribe((res) => {
       this.result = res
 
       // Number of Questions
-      const size = 15
+      const size = 30
       this.allQuestionsList = this.result.questions;
       // Display n random questions from the QuestionList
       this.questionsList = this.allQuestionsList.sort(() => Math.random() - Math.random()).slice(0, size)
@@ -137,8 +137,9 @@ export class InternQuestionsComponent implements OnInit {
   }
   // Transform the time from seconds to Minutes : seconds
   transform(value: number): string {
-    const minutes: number = Math.floor(value / 60);
-    return minutes + ':' + (value - minutes * 60);
+    const hour: number = Math.floor(value / 3600)
+    const minutes: number = Math.floor(((value - (hour * 3600)) / 60));
+    return hour + ':' + minutes + ':' + (value - (hour * 3600) - (minutes * 60));
   }
   // Pause Timer
   pauseTimer() {

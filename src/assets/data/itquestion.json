@@ -1,0 +1,1030 @@
+{
+  "questions": [
+    {
+      "questionText": "Alfred buys an old scooter for N4700 and spends N800 on its repairs. If he sells the scooter for N5800, his gain percent % is ?",
+      "options": [
+        {
+          "text": "4 4/7%"
+        },
+        {
+          "text": "5 5/11%",
+          "correct": true
+        },
+        {
+          "text": "10%"
+        },
+        {
+          "text": "12%"
+        }
+      ]
+    },
+    {
+      "questionText": " The cost price of 20 articles is the same as the selling price of x articles. If the profit is 25%, then the value of x is?",
+      "options": [
+        {
+          "text": "15"
+        },
+        {
+          "text": "16",
+          "correct": true
+        },
+        {
+          "text": "18"
+        },
+        {
+          "text": "25"
+        }
+      ]
+    },
+    {
+      "questionText": "In a certain store, the profit is 320% of the cost. If the cost increases by 25% but the selling price remains constant, approximately what percentage of the selling price is the profit?",
+      "options": [
+        {
+          "text": "30%"
+        },
+        {
+          "text": "70%",
+          "correct": true
+        },
+        {
+          "text": "100%"
+        },
+        {
+          "text": "250%"
+        }
+      ]
+    },
+    {
+      "questionText": "Some articles were bought at 6 articles for N5 and sold at 5 articles for N6. Gain percent is ?",
+      "options": [
+        {
+          "text": "30%"
+        },
+        {
+          "text": "33 1/3%"
+        },
+        {
+          "text": "35%"
+        },
+        {
+          "text": "44%",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "Find the greatest number that will be divide 43,91 and 183 so as to leave the same remainder in each case.",
+      "options": [
+        {
+          "text": "4",
+          "correct": true
+        },
+        {
+          "text": "7"
+        },
+        {
+          "text": "9"
+        },
+        {
+          "text": "183"
+        }
+      ]
+    },
+    {
+      "questionText": "Six bells commence tolling together and toll at intervals of 2,4,6,8,10 and 12 seconds respectively. In 30 minutes, how many times do they toll together? ",
+      "options": [
+        {
+          "text": "4"
+        },
+        {
+          "text": "10"
+        },
+        {
+          "text": "15"
+        },
+        {
+          "text": "16",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "Find the lowest common multiple 24,36 and 40.",
+      "options": [
+        {
+          "text": "120"
+        },
+        {
+          "text": "240"
+        },
+        {
+          "text": "360",
+          "correct": true
+        },
+        {
+          "text": "480"
+        }
+      ]
+    },
+    {
+      "questionText": "The cube root of .000216 is?",
+      "options": [
+        {
+          "text": "0.6"
+        },
+        {
+          "text": "0.06",
+          "correct": true
+        },
+        {
+          "text": "77"
+        },
+        {
+          "text": "87"
+        }
+      ]
+    },
+    {
+      "questionText": "A group of students decided to collect as many kobos from each member of group as is the number of members. If the total collection amounts of N59.29, the number of the member in the group is?",
+      "options": [
+        {
+          "text": "57"
+        },
+        {
+          "text": "67"
+        },
+        {
+          "text": "77",
+          "correct": true
+        },
+        {
+          "text": "87"
+        }
+      ]
+    },
+    {
+      "questionText": "A sum fetched a total simple interest of N4016.25 at the rate of 9%p.a. in 5 years. What is the sum ?",
+      "options": [
+        {
+          "text": "4462.50"
+        },
+        {
+          "text": "8032.50"
+        },
+        {
+          "text": "8900"
+        },
+        {
+          "text": "8925",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "How much time will it take for an amount of N450 to yield N81 as interest of 4,5% per annum of simple interest?",
+      "options": [
+        {
+          "text": "3.5years"
+        },
+        {
+          "text": "4years",
+          "correct": true
+        },
+        {
+          "text": "4.5years"
+        },
+        {
+          "text": "5years"
+        }
+      ]
+    },
+    {
+      "questionText": "A sum of N12500 amounts to N15,500 in 4 years at the rate of simple interest. What is the rate of interest?",
+      "options": [
+        {
+          "text": "3%"
+        },
+        {
+          "text": "4%"
+        },
+        {
+          "text": "5%"
+        },
+        {
+          "text": "6%",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "What will be the ratio of simple interest earned by certain amount at the same rate of interest for 6 years and that for 9 years?",
+      "options": [
+        {
+          "text": "1:3"
+        },
+        {
+          "text": "1:4"
+        },
+        {
+          "text": "2:3",
+          "correct": true
+        },
+        {
+          "text": "Data inadequate"
+        }
+      ]
+    },
+    {
+      "questionText": "A and B invest in business in the ratio 3:2. If 5% of the total profit goes to charity and A's share is N855, the total profit is?",
+      "options": [
+        {
+          "text": "1425"
+        },
+        {
+          "text": "1500",
+          "correct": true
+        },
+        {
+          "text": "1537.50"
+        },
+        {
+          "text": "1576"
+        }
+      ]
+    },
+    {
+      "questionText": "A starts business with N3500 and after 5 months, B joins with A as his partner. After a year, the profit is divided in the ratio 2:3. What is B's contribution in the capital?",
+      "options": [
+        {
+          "text": "7500"
+        },
+        {
+          "text": "8000"
+        },
+        {
+          "text": "8500"
+        },
+        {
+          "text": "9000",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "Arun, Kamal and Vinjay invested N8000, N4000 and N8000 respectively in a business. Arun left after six months. If after eight months, there was a gain of N4005, then what will be the share of Kamal?",
+      "options": [
+        {
+          "text": "890",
+          "correct": true
+        },
+        {
+          "text": "1335"
+        },
+        {
+          "text": "1602"
+        },
+        {
+          "text": "1780"
+        }
+      ]
+    },
+    {
+      "questionText": "Simran started a software business by investing N50,000. After six months, Nanda joined her with a capital of N80,000. After 3 years, they earned a profit of N24,500. What was Simran's share in the profit?",
+      "options": [
+        {
+          "text": "9,423"
+        },
+        {
+          "text": "10,250"
+        },
+        {
+          "text": "12,500"
+        },
+        {
+          "text": "10,500",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "It was Sunday on Jan 1, 2006. What was the day of the week Jan 1, 2010?",
+      "options": [
+        {
+          "text": "Sunday"
+        },
+        {
+          "text": "Monday"
+        },
+        {
+          "text": "Friday",
+          "correct": true
+        },
+        {
+          "text": "Wednesday"
+        }
+      ]
+    },
+    {
+      "questionText": "what will be the day of the week 15th August ,2010?",
+      "options": [
+        {
+          "text": "Sunday",
+          "correct": true
+        },
+        {
+          "text": "Monday"
+        },
+        {
+          "text": "Tuesday"
+        },
+        {
+          "text": "Friday"
+        }
+      ]
+    },
+    {
+      "questionText": "If today is Monday, After 61 days, it will be?",
+      "options": [
+        {
+          "text": "Wednesday"
+        },
+        {
+          "text": "Saturday",
+          "correct": true
+        },
+        {
+          "text": "Tuesday"
+        },
+        {
+          "text": "Thursday"
+        }
+      ]
+    },
+    {
+      "questionText": "The value of [(0.1 x 0.1 x 0.1) + (0.02 x 0.02 x 0.02)}/[(0.2 x 0.2 x 0.2)+(0.04 x 0.04 x 0.04)]",
+      "options": [
+        {
+          "text": "0.0125"
+        },
+        {
+          "text": "0.125",
+          "correct": true
+        },
+        {
+          "text": "0.25"
+        },
+        {
+          "text": "0.5"
+        }
+      ]
+    },
+    {
+      "questionText": "What decimal of an hour is a second?",
+      "options": [
+        {
+          "text": "0.0025"
+        },
+        {
+          "text": "0.0256"
+        },
+        {
+          "text": "0.00027",
+          "correct": true
+        },
+        {
+          "text": "0.000126"
+        }
+      ]
+    },
+    {
+      "questionText": "0.009/? = 0.01",
+      "options": [
+        {
+          "text": "0.0009"
+        },
+        {
+          "text": "0.09"
+        },
+        {
+          "text": "0.9",
+          "correct": true
+        },
+        {
+          "text": "9"
+        }
+      ]
+    },
+    {
+      "questionText": "3889 + 12.952 - X = 3854.002",
+      "options": [
+        {
+          "text": "47.095"
+        },
+        {
+          "text": "47.752"
+        },
+        {
+          "text": "47.932"
+        },
+        {
+          "text": "47.95",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "0.04 x 0.0162 is equal to?",
+      "options": [
+        {
+          "text": "6.48 x 10^-3"
+        },
+        {
+          "text": "6.48 x 10^-4",
+          "correct": true
+        },
+        {
+          "text": "6.48 x 10^-5"
+        },
+        {
+          "text": "6.48 x 10^-6"
+        }
+      ]
+    },
+    {
+      "questionText": "To drive home?",
+      "options": [
+        {
+          "text": "To find one's roots"
+        },
+        {
+          "text": "To return to place of rest"
+        },
+        {
+          "text": "Back to original position"
+        },
+        {
+          "text": "To emphasise",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "To have an axe to grind",
+      "options": [
+        {
+          "text": "A private end to serve",
+          "correct": true
+        },
+        {
+          "text": "To fail to arouse interest"
+        },
+        {
+          "text": "To have no result"
+        },
+        {
+          "text": "To work for both sides"
+        }
+      ]
+    },
+    {
+      "questionText": "To cry wolf",
+      "options": [
+        {
+          "text": "To listen eargerly"
+        },
+        {
+          "text": "To give false alarm",
+          "correct": true
+        },
+        {
+          "text": "To turn pale"
+        },
+        {
+          "text": "To keep starvation"
+        }
+      ]
+    },
+    {
+      "questionText": "To put one's hand to plough",
+      "options": [
+        {
+          "text": "To take up agricultural farming"
+        },
+        {
+          "text": "To take a difficult task",
+          "correct": true
+        },
+        {
+          "text": "To get entangled into unnecessary things"
+        },
+        {
+          "text": "Take interest in technical work"
+        }
+      ]
+    },
+    {
+      "questionText": "To pick holes",
+      "options": [
+        {
+          "text": "To find some reason to quarrel"
+        },
+        {
+          "text": "To destroy something"
+        },
+        {
+          "text": "To criticise someone",
+          "correct": true
+        },
+        {
+          "text": "To cut some part of an item"
+        }
+      ]
+    },
+    {
+      "questionText": "To leave someone in the lurch",
+      "options": [
+        {
+          "text": "To come to compromise someone"
+        },
+        {
+          "text": "Constant source of annoyance to someone"
+        },
+        {
+          "text": "To put someone at ease"
+        },
+        {
+          "text": "To desert someone in his diffculties",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "A black sheep",
+      "options": [
+        {
+          "text": "An unlucky person"
+        },
+        {
+          "text": "A lucky person"
+        },
+        {
+          "text": "A partner who takes no share of the profits"
+        },
+        {
+          "text": "None of these",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "To smell a rat",
+      "options": [
+        {
+          "text": "To see signs of plague epidemic"
+        },
+        {
+          "text": "To get bad smell of a bad dead rat"
+        },
+        {
+          "text": "To suspect foul dealings",
+          "correct": true
+        },
+        {
+          "text": "To be in a bad mood"
+        }
+      ]
+    },
+    {
+      "questionText": "DIVA: OPERA",
+      "options": [
+        {
+          "text": "Producer: Theatre"
+        },
+        {
+          "text": "Director: Drama"
+        },
+        {
+          "text": "Conductor: Bus"
+        },
+        {
+          "text": "Thespain: Play",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "PAIN :SEDATIVE",
+      "options": [
+        {
+          "text": "Comfort: Stimulant"
+        },
+        {
+          "text": "Grief: Consolation",
+          "correct": true
+        },
+        {
+          "text": "Trance: Narcotic"
+        },
+        {
+          "text": "Ache: Extraction"
+        }
+      ]
+    },
+    {
+      "questionText": "PORK: PIG",
+      "options": [
+        {
+          "text": "Rooster: Chicken"
+        },
+        {
+          "text": "Mutton: Sheep",
+          "correct": true
+        },
+        {
+          "text": "Steer: Beef"
+        },
+        {
+          "text": "Lobster: Crustacean"
+        }
+      ]
+    },
+    {
+      "questionText": "AFTER: BEFORE",
+      "options": [
+        {
+          "text": "First: Second"
+        },
+        {
+          "text": "Present: Past"
+        },
+        {
+          "text": "Contemporary: Life"
+        },
+        {
+          "text": "Sucessor: Predecessor",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "FILTER: WATER",
+      "options": [
+        {
+          "text": "Curtail: Activity"
+        },
+        {
+          "text": "Expunge: Book"
+        },
+        {
+          "text": "Edit: Text"
+        },
+        {
+          "text": "Censor: Play",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "The small child does whatever his father was done",
+      "options": [
+        {
+          "text": "Has done"
+        },
+        {
+          "text": "Did"
+        },
+        {
+          "text": "Does",
+          "correct": true
+        },
+        {
+          "text": "Had done"
+        }
+      ]
+    },
+    {
+      "questionText": "You need not come unless you wa",
+      "options": [
+        {
+          "text": "You don't need to come unless you want to",
+          "correct": true
+        },
+        {
+          "text": "You come only when you want to"
+        },
+        {
+          "text": "You come unless you don't want to"
+        },
+        {
+          "text": "You needn't come until you don't want to"
+        }
+      ]
+    },
+    {
+      "questionText": "The man to who i sold my house was a cheat",
+      "options": [
+        {
+          "text": "To whom i sell"
+        },
+        {
+          "text": "To who i sell"
+        },
+        {
+          "text": "who was sold to"
+        },
+        {
+          "text": "To whom i sold",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "There were all shocked at his failure in the competition",
+      "options": [
+        {
+          "text": "Were shocked at all"
+        },
+        {
+          "text": "Had all shocked at"
+        },
+        {
+          "text": "Had all shocked by"
+        },
+        {
+          "text": "No correction required",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "Why should the candidates be afraid of English Language is not clear",
+      "options": [
+        {
+          "text": "The candiadates should be",
+          "correct": true
+        },
+        {
+          "text": "Do the candidates be"
+        },
+        {
+          "text": "Should be the candidates"
+        },
+        {
+          "text": "Are the candidates"
+        }
+      ]
+    },
+    {
+      "questionText": "The phrase 'preoccupied grandmotherly air'signifies",
+      "options": [
+        {
+          "text": "Being totally unconcerned"
+        },
+        {
+          "text": "Pretending to be very busy"
+        },
+        {
+          "text": "A very superior attitude"
+        },
+        {
+          "text": "Calm, dignified and affectionate disposition",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "The author did not want to shoot the elephant because he",
+      "options": [
+        {
+          "text": "was afraid of it"
+        },
+        {
+          "text": "did not have the experience of shooting big animals",
+          "correct": true
+        },
+        {
+          "text": "did not wish to kill an animal which was not doing anybody any harm"
+        },
+        {
+          "text": "did not find the elephant to be ferocious"
+        }
+      ]
+    },
+    {
+      "questionText": "From the passage, it appears that the authr was",
+      "options": [
+        {
+          "text": "an inexperienced hunter"
+        },
+        {
+          "text": "kind and considerate",
+          "correct": true
+        },
+        {
+          "text": "possessed with fear"
+        },
+        {
+          "text": "a worried man"
+        }
+      ]
+    },
+    {
+      "questionText": "In his dream, Harold found the loathsome creatures",
+      "options": [
+        {
+          "text": "in his village"
+        },
+        {
+          "text": "in his own house"
+        },
+        {
+          "text": "in a different land",
+          "correct": true
+        },
+        {
+          "text": "in hs office"
+        }
+      ]
+    },
+    {
+      "questionText": "Which one of the following phrases best helps to bring out the precise meaning of 'loathsome creatures'?",
+      "options": [
+        {
+          "text": "Security bug and slimy tentacles"
+        },
+        {
+          "text": "Fearful dream and slug-like animals"
+        },
+        {
+          "text": "Slimy tentacles and slug-like animals",
+          "correct": true
+        },
+        {
+          "text": "slug-like animals and security bug"
+        }
+      ]
+    },
+    {
+      "questionText": "The statement that 'he later threw off the security bug'means that",
+      "options": [
+        {
+          "text": "Harold succeeded in overcoming the need for security",
+          "correct": true
+        },
+        {
+          "text": "Harold stopped giving much importance to dreams"
+        },
+        {
+          "text": "Harold started tolerating social victimization"
+        },
+        {
+          "text": "Harold killed all the bugs that troubled me"
+        }
+      ]
+    },
+    {
+      "questionText": "Harold's dream was fearful because",
+      "options": [
+        {
+          "text": "it brought him face to face with reality",
+          "correct": true
+        },
+        {
+          "text": "it was full of vivid pictures of snakes"
+        },
+        {
+          "text": "he saw huge elephant in it"
+        },
+        {
+          "text": "in it he saw slimy creatues feeding on people's bodies"
+        }
+      ]
+    },
+    {
+      "questionText": "A and B invest in business in the ratio 3:2. If 5% of the total profit goes to charity and A's share is N855, the total profit is?",
+      "options": [
+        {
+          "text": "1425"
+        },
+        {
+          "text": "1500",
+          "correct": true
+        },
+        {
+          "text": "1537.50"
+        },
+        {
+          "text": "1576"
+        }
+      ]
+    },
+    {
+      "questionText": "A and B invest in business in the ratio 3:2. If 5% of the total profit goes to charity and A's share is N855, the total profit is?",
+      "options": [
+        {
+          "text": "1425"
+        },
+        {
+          "text": "1500",
+          "correct": true
+        },
+        {
+          "text": "1537.50"
+        },
+        {
+          "text": "1576"
+        }
+      ]
+    },
+    {
+      "questionText": "A and B invest in business in the ratio 3:2. If 5% of the total profit goes to charity and A's share is N855, the total profit is?",
+      "options": [
+        {
+          "text": "1425"
+        },
+        {
+          "text": "1500",
+          "correct": true
+        },
+        {
+          "text": "1537.50"
+        },
+        {
+          "text": "1576"
+        }
+      ]
+    },
+    {
+      "questionText": "A and B invest in business in the ratio 3:2. If 5% of the total profit goes to charity and A's share is N855, the total profit is?",
+      "options": [
+        {
+          "text": "1425"
+        },
+        {
+          "text": "1500",
+          "correct": true
+        },
+        {
+          "text": "1537.50"
+        },
+        {
+          "text": "1576"
+        }
+      ]
+    },
+    {
+      "questionText": "A and B invest in business in the ratio 3:2. If 5% of the total profit goes to charity and A's share is N855, the total profit is?",
+      "options": [
+        {
+          "text": "1425"
+        },
+        {
+          "text": "1500",
+          "correct": true
+        },
+        {
+          "text": "1537.50"
+        },
+        {
+          "text": "1576"
+        }
+      ]
+    },
+    {
+      "questionText": "A and B invest in business in the ratio 3:2. If 5% of the total profit goes to charity and A's share is N855, the total profit is?",
+      "options": [
+        {
+          "text": "1425"
+        },
+        {
+          "text": "1500",
+          "correct": true
+        },
+        {
+          "text": "1537.50"
+        },
+        {
+          "text": "1576"
+        }
+      ]
+    },
+    {
+      "questionText": "A and B invest in business in the ratio 3:2. If 5% of the total profit goes to charity and A's share is N855, the total profit is?",
+      "options": [
+        {
+          "text": "1425"
+        },
+        {
+          "text": "1500",
+          "correct": true
+        },
+        {
+          "text": "1537.50"
+        },
+        {
+          "text": "1576"
+        }
+      ]
+    }
+  ]
+}

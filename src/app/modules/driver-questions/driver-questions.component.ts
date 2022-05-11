@@ -56,7 +56,7 @@ export class DriverQuestionsComponent implements OnInit {
 
   // Get all Questions from Json
   getAllQuestions() {
-    this.questionService.getQuestionJson().subscribe((res) => {
+    this.questionService.getQuestionJson('questions').subscribe((res) => {
       this.result = res
 
       // Number of Questions
@@ -138,8 +138,9 @@ export class DriverQuestionsComponent implements OnInit {
   }
   // Transform the time from seconds to Minutes : seconds
   transform(value: number): string {
-    const minutes: number = Math.floor(value / 60);
-    return minutes + ':' + (value - minutes * 60);
+    const hour: number = Math.floor(value / 3600)
+    const minutes: number = Math.floor(((value - (hour * 3600)) / 60));
+    return hour + ':' + minutes + ':' + (value - (hour * 3600) - (minutes * 60));
   }
   // Pause Timer
   pauseTimer() {

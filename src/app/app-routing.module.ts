@@ -14,6 +14,8 @@ import { HomeComponent } from './modules/home/home.component';
 import { InternQuestionsComponent } from './modules/intern-questions/intern-questions.component';
 import { InternComponent } from './modules/intern/intern.component';
 import { QuestionsComponent } from './modules/questions/questions.component';
+import { NyscComponent } from './modules/nysc/nysc.component';
+import { NyscQuestionsComponent } from './modules/nysc-questions/nysc-questions.component';
 
 const routes: Routes = [
   {
@@ -53,6 +55,14 @@ const routes: Routes = [
         }
       },
       {
+        path: 'nysc',
+        component: NyscComponent,
+        data: {
+          title: 'Nysc',
+          description: 'Description Meta Tag Content'
+        }
+      },
+      {
         path: 'driver',
         component: DriverComponent,
         data: {
@@ -82,6 +92,15 @@ const routes: Routes = [
         component: InternQuestionsComponent,
         data: {
           title: 'Intern Questions',
+          description: 'Description Meta Tag Content'
+        },
+        canActivate: [AuthGuard]
+      },
+      {
+        path: 'nysc-questions',
+        component: NyscQuestionsComponent,
+        data: {
+          title: 'Nysc Questions',
           description: 'Description Meta Tag Content'
         },
         canActivate: [AuthGuard]

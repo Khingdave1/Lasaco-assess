@@ -7,11 +7,11 @@ import { Profile } from 'src/app/interfaces/profile';
 import { FirebaseService } from 'src/app/services/firebase.service';
 
 @Component({
-  selector: 'app-entry-level-questions',
-  templateUrl: './entry-level-questions.component.html',
-  styleUrls: ['./entry-level-questions.component.css']
+  selector: 'app-nysc-questions',
+  templateUrl: './nysc-questions.component.html',
+  styleUrls: ['./nysc-questions.component.css']
 })
-export class EntryLevelQuestionsComponent implements OnInit {
+export class NyscQuestionsComponent implements OnInit {
 
   public allQuestionsList: any = [];
   public questionsList: any = [];
@@ -26,7 +26,7 @@ export class EntryLevelQuestionsComponent implements OnInit {
   selected: boolean = false;
   isTestCompleted: boolean = false;
   totalAttemptedQuestion: number = 0;
-  testDuration: number = 5400; //In seconds
+  testDuration: number = 3600; //In seconds
   testDurationMinute: number = 1;
   display: any;
   interval: any;
@@ -55,11 +55,11 @@ export class EntryLevelQuestionsComponent implements OnInit {
 
   // Get all Questions from Json
   getAllQuestions() {
-    this.questionService.getQuestionJson('nyscquestion').subscribe((res) => {
+    this.questionService.getQuestionJson('itquestion').subscribe((res) => {
       this.result = res
 
       // Number of Questions
-      const size = 50
+      const size = 30
       this.allQuestionsList = this.result.questions;
       // Display n random questions from the QuestionList
       this.questionsList = this.allQuestionsList.sort(() => Math.random() - Math.random()).slice(0, size)
@@ -171,18 +171,4 @@ export class EntryLevelQuestionsComponent implements OnInit {
     this.router.navigate(['/'])
   }
 
-  // Reset Counter
-  // resetCounter() {
-  //   this.stopCounter()
-  //   this.counter = 1800
-  //   this.startCounter()
-  // }
-  // Reset Quiz
-  // resetQuiz() {
-  //   this.resetCounter()
-  //   this.getAllQuestions()
-  //   this.point = 0
-  //   this.counter = 1800
-  //   this.currentQuestion = 0
-  // }
 }

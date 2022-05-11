@@ -9,7 +9,8 @@ export class QuestionService {
   constructor(private http: HttpClient) {
   }
 
-  getQuestionJson() {
-    return this.http.get('assets/data/questions.json')
+  getQuestionJson(jsonName: any) {
+    console.log(jsonName)
+    return this.http.get(`assets/data/${jsonName}.json`)
   }
 }

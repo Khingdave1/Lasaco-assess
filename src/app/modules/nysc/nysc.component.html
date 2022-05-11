@@ -1,0 +1,42 @@
+<!-- Header -->
+<app-header></app-header>
+
+<div class="auth">
+  <div class="auth-content">
+    <div class="auth-content-head">
+      <h2>Login to continue</h2>
+    </div>
+    <form
+      class="auth-content-form"
+      (ngSubmit)="signin()"
+      [formGroup]="signinForm"
+    >
+      <div class="form-control">
+        <input type="email" placeholder="Email" formControlName="email" />
+      </div>
+      <div class="form-control">
+        <input
+          placeholder="Password"
+          formControlName="password"
+          [type]="hide ? 'password' : 'text'"
+        />
+        <img
+          [src]="
+            hide
+              ? '../../../assets/img/bx-show.svg'
+              : '../../../assets/img/bx-hide.svg'
+          "
+          class="clickable"
+          (click)="hide = !hide"
+        />
+      </div>
+      <span class="rc">{{ errorMessage }}</span>
+      <div class="form-btn">
+        <button class="btn prim-btn clickable" (click)="signin()">
+          <span *ngIf="loading">Loading...</span>
+          <span *ngIf="!loading">Start the Test</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

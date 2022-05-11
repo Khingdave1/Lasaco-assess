@@ -11,6 +11,8 @@ import { QuestionsComponent } from 'src/app/modules/questions/questions.componen
 import { EntryLevelQuestionsComponent } from 'src/app/modules/entry-level-questions/entry-level-questions.component';
 import { InternQuestionsComponent } from 'src/app/modules/intern-questions/intern-questions.component';
 import { DriverQuestionsComponent } from 'src/app/modules/driver-questions/driver-questions.component';
+import { NyscComponent } from 'src/app/modules/nysc/nysc.component';
+import { NyscQuestionsComponent } from 'src/app/modules/nysc-questions/nysc-questions.component';
 
 
 
@@ -23,7 +25,9 @@ import { DriverQuestionsComponent } from 'src/app/modules/driver-questions/drive
     QuestionsComponent,
     EntryLevelQuestionsComponent,
     InternQuestionsComponent,
-    DriverQuestionsComponent
+    DriverQuestionsComponent,
+    NyscComponent,
+    NyscQuestionsComponent
   ],
   imports: [
     CommonModule,
