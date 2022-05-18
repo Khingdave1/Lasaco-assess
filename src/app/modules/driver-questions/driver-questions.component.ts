@@ -80,18 +80,18 @@ export class DriverQuestionsComponent implements OnInit {
     if (option.correct) {
       this.points += 10;
       this.correctAnswer++
-      this.currentQuestion++
       // this.resetCounter()
-      // setTimeout(() => {
-      // }, 1000);
+      setTimeout(() => {
+        this.currentQuestion++
+      }, 1000);
       // this.totalAttemptedQuestion++
 
     } else {
-      this.currentQuestion++
       this.inCorrectAnswer++
       // this.resetCounter()
-      // setTimeout(() => {
-      // }, 1000);
+      setTimeout(() => {
+        this.currentQuestion++
+      }, 1000);
       // this.point -= 10
     }
     this.totalAttemptedQuestion++
