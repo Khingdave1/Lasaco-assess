@@ -21,6 +21,7 @@ export class InternQuestionsComponent implements OnInit {
   public points: number = 0;
   public totalPoints: number = 0;
   public pointsPercentage: number = 0;
+  public timeStamp: any;
   correctAnswer: number = 0;
   inCorrectAnswer: number = 0;
   selected: boolean = false;
@@ -149,12 +150,24 @@ export class InternQuestionsComponent implements OnInit {
 
   // Update User profile
   updateUserProfile() {
+    // Get current timestamp
+    const currTime = Number(new Date())
+
+    // Convert timestamp into readable time string
+    const readableTime = new Date(currTime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) //Display without seconds
+
+    // Convert timestamp into readable date string
+    const readableDate = new Date(currTime).toDateString()
+
+    this.timeStamp = readableDate + ', ' + readableTime
+
     let payload = {
       testScore: this.points,
       totalQuestionsAttempted: this.totalAttemptedQuestion,
       totalCorrectAnswered: this.correctAnswer,
       totalWrongAnswered: this.inCorrectAnswer,
       scorePercentage: this.pointsPercentage,
+      timeStamp: this.timeStamp
     }
 
     this.profileService.updateUser(this.user.id, payload).then(res => {

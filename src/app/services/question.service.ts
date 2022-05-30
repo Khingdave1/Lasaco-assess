@@ -10,7 +10,6 @@ export class QuestionService {
   }
 
   getQuestionJson(jsonName: any) {
-    console.log(jsonName)
     return this.http.get(`assets/data/${jsonName}.json`)
   }
 }

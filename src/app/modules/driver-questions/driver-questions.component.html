@@ -62,7 +62,14 @@
 
     <ng-container *ngIf="isTestCompleted">
       <div class="test-result-container dis-flex">
-        <img src="../../../assets/img/33267160.jpg" alt="" />
+        <img
+          [src]="
+            pointsPercentage >= 50
+              ? '../../../assets/img/thumbup.png'
+              : '../../../assets/img/thumbdown.png'
+          "
+          alt="Image"
+        />
         <div class="test-rsult-details">
           <h3>
             Congratulations!!! You have completed the Test. <br />Below is your

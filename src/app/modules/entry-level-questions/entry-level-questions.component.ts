@@ -21,6 +21,7 @@ export class EntryLevelQuestionsComponent implements OnInit {
   public points: number = 0;
   public totalPoints: number = 0;
   public pointsPercentage: number = 0;
+  public timeStamp: any;
   correctAnswer: number = 0;
   inCorrectAnswer: number = 0;
   selected: boolean = false;
@@ -51,6 +52,7 @@ export class EntryLevelQuestionsComponent implements OnInit {
       });
     })
 
+
   }
 
   // Get all Questions from Json
@@ -73,27 +75,25 @@ export class EntryLevelQuestionsComponent implements OnInit {
     // var element = event.currentTarget;
     // element.classList.add("selected")
     // If last question
-    if (currentQno === this.questionsList.length) {
-      this.currentQuestion--
-    }
-    if (option.correct) {
-      this.points += 10;
-      this.correctAnswer++
-      // this.resetCounter()
-      setTimeout(() => {
-        this.currentQuestion++
-      }, 1000);
-      // this.totalAttemptedQuestion++
+    setTimeout(() => {
+      if (currentQno === this.questionsList.length) {
+        this.currentQuestion--
+      }
+      if (option.correct) {
+        this.points += 10;
+        this.correctAnswer++
+        // this.resetCounter()
 
-    } else {
-      this.inCorrectAnswer++
-      // this.resetCounter()
-      setTimeout(() => {
-        this.currentQuestion++
-      }, 1000);
-      // this.point -= 10
-    }
-    this.totalAttemptedQuestion++
+      } else {
+        this.inCorrectAnswer++
+        // this.resetCounter()
+      }
+
+      this.currentQuestion++
+
+      this.totalAttemptedQuestion++
+    }, 1000);
+
   }
 
   // Next Question
@@ -149,12 +149,24 @@ export class EntryLevelQuestionsComponent implements OnInit {
 
   // Update User profile
   updateUserProfile() {
+    // Get current timestamp
+    const currTime = Number(new Date())
+
+    // Convert timestamp into readable time string
+    const readableTime = new Date(currTime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) //Display without seconds
+
+    // Convert timestamp into readable date string
+    const readableDate = new Date(currTime).toDateString()
+
+    this.timeStamp = readableDate + ', ' + readableTime
+
     let payload = {
       testScore: this.points,
       totalQuestionsAttempted: this.totalAttemptedQuestion,
       totalCorrectAnswered: this.correctAnswer,
       totalWrongAnswered: this.inCorrectAnswer,
       scorePercentage: this.pointsPercentage,
+      timeStamp: this.timeStamp
     }
 
     this.profileService.updateUser(this.user.id, payload).then(res => {

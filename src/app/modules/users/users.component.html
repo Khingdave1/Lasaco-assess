@@ -37,12 +37,12 @@
     <!-- Table -->
     <table id="users-table">
       <tr class="table-header">
-        <th>Name</th>
+        <th>Candidate Name</th>
         <th>Email</th>
-        <th>Role</th>
-        <th>Score Percentage</th>
-        <th>Status</th>
-        <th>Actions</th>
+        <th>Phone Number</th>
+        <th>Grade (%)</th>
+        <th>Course</th>
+        <th>Date & Time</th>
       </tr>
       <tr class="table-body clickable" *ngFor="let i of users">
         <td class="name">{{ i.fullName | titlecase }}</td>
@@ -50,12 +50,19 @@
           {{ i.emailAddress }}
         </td>
         <td>{{ i.role }}</td>
-        <td class="quadrant">{{ i.scorePercentage }}</td>
-        <td class="status">Status</td>
-        <td class="actions">
-          <span> Delete </span>
+        <td class="">{{ i.scorePercentage }}</td>
+        <td class="">Status</td>
+        <td class="d-t">
+          12pm
         </td>
       </tr>
     </table>
   </div>
 </section>
+
+<div class="logout">
+  <span class="dis-flex clickable">
+    <i class="bx bx-log-out"></i>
+    Log Out
+  </span>
+</div>

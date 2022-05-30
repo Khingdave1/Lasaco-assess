@@ -124,7 +124,7 @@ i {
 
 /* Test Result Container starts */
 .test-result-container {
-  gap: 1rem;
+  gap: 3rem;
   padding: 2rem 0;
 }
 .test-result-container img {
