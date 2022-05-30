@@ -35,33 +35,35 @@
       </div>
     </div>
     <!-- Table -->
-    <table id="users-table">
-      <tr class="table-header">
-        <th>Candidate Name</th>
-        <th>Email</th>
-        <th>Phone Number</th>
-        <th>Grade (%)</th>
-        <th>Course</th>
-        <th>Date & Time</th>
-      </tr>
-      <tr class="table-body clickable" *ngFor="let i of users">
-        <td class="name">{{ i.fullName | titlecase }}</td>
-        <td class="">
-          {{ i.emailAddress }}
-        </td>
-        <td>{{ i.role }}</td>
-        <td class="">{{ i.scorePercentage }}</td>
-        <td class="">Status</td>
-        <td class="d-t">
-          12pm
-        </td>
-      </tr>
-    </table>
+    <div class="table-container">
+      <table id="users-table">
+        <tr class="table-header">
+          <th>Candidate Name</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>Course</th>
+          <th>School</th>
+          <th>Grade (%)</th>
+          <th>Date & Time</th>
+        </tr>
+        <tr class="table-body clickable" *ngFor="let i of users">
+          <td class="name">{{ i.fullName | titlecase }}</td>
+          <td class="">
+            {{ i.emailAddress }}
+          </td>
+          <td>{{ i.telNumber }}</td>
+          <td class="">{{ i.course }}</td>
+          <td class="">{{ i.school }}</td>
+          <td class="">{{ i.scorePercentage }}</td>
+          <td class="d-t">{{ i.timeStamp }}</td>
+        </tr>
+      </table>
+    </div>
   </div>
 </section>
 
 <div class="logout">
-  <span class="dis-flex clickable">
+  <span class="dis-flex clickable" (click)="logOut()">
     <i class="bx bx-log-out"></i>
     Log Out
   </span>

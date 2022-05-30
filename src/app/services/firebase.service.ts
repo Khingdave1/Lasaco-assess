@@ -52,6 +52,8 @@ export class FirebaseService {
           emailAddress: payload.emailAddress.toLowerCase(),
           telNumber: payload.telNumber,
           role: payload.role,
+          school: payload.school,
+          course: payload.course,
           imageUrl: this.imageUrl,
           testScore: this.testScore,
           totalQuestionsAttempted: this.totalQuestionsAttempted,

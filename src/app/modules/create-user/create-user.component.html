@@ -16,14 +16,14 @@
         (ngSubmit)="createUser()"
         [formGroup]="createUserForm"
       >
-        <div class="form-control">
+        <div class="form-control col-2">
           <input
             type="text"
             placeholder="Full Name"
             formControlName="fullName"
           />
         </div>
-        <div class="form-control">
+        <div class="form-control col-2">
           <input type="email" placeholder="Email" formControlName="email" />
         </div>
         <div class="form-control">
@@ -48,26 +48,34 @@
             </option>
           </select>
         </div>
-        <div class="form-control">
-          <input
-            placeholder="Password"
-            formControlName="password"
-            [type]="hide ? 'password' : 'text'"
-          />
-          <img
-            [src]="
-              hide
-                ? '../../../assets/img/bx-show.svg'
-                : '../../../assets/img/bx-hide.svg'
-            "
-            class="clickable"
-            (click)="hide = !hide"
-          />
+        <div class="form-control col-2">
+          <input type="text" placeholder="Course" formControlName="course" />
         </div>
-        <!-- Warning -->
-        <p class="warning-msg">Password must be at least 6 characters</p>
-        <!-- Error -->
-        <span class="rc">{{ errorMessage }}</span>
+        <div class="form-control col-2">
+          <input type="text" placeholder="School" formControlName="school" />
+        </div>
+        <div class="col-2">
+          <div class="form-control">
+            <input
+              placeholder="Password"
+              formControlName="password"
+              [type]="hide ? 'password' : 'text'"
+            />
+            <img
+              [src]="
+                hide
+                  ? '../../../assets/img/bx-show.svg'
+                  : '../../../assets/img/bx-hide.svg'
+              "
+              class="clickable"
+              (click)="hide = !hide"
+            />
+          </div>
+          <!-- Warning -->
+          <p class="warning-msg">Password must be at least 6 characters</p>
+          <!-- Error -->
+        </div>
+        <span class="rc col-2">{{ errorMessage }}</span>
         <div class="form-btn">
           <button class="btn prim-btn clickable" (click)="createUser()">
             <span *ngIf="loading">Loading...</span>

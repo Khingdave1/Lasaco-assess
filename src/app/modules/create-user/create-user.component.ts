@@ -50,6 +50,8 @@ export class CreateUserComponent implements OnInit {
     email: ['', { validators: [Validators.required, Validators.email], updateOn: "change" }],
     telNumber: ['', { validators: [Validators.required], updateOn: "change" }],
     role: ['', { validators: [Validators.required], updateOn: "change" }],
+    course: ['', { validators: [Validators.required], updateOn: "change" }],
+    school: ['', { validators: [Validators.required], updateOn: "change" }],
     password: ['', { validators: [Validators.required], updateOn: "change" }]
   })
 
@@ -66,6 +68,8 @@ export class CreateUserComponent implements OnInit {
       emailAddress: this.createUserForm.value.email,
       telNumber: this.createUserForm.value.telNumber,
       role: this.createUserForm.value.role,
+      course: this.createUserForm.value.course,
+      school: this.createUserForm.value.school,
       password: this.createUserForm.value.password
     }
 

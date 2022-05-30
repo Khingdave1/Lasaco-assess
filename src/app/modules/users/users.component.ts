@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Profile } from 'src/app/interfaces/profile';
 import { ProfileService } from 'src/app/services/profile.service';
+import { FirebaseService } from 'src/app/services/firebase.service';
+import { Router } from '@angular/router';
 import * as XLSX from 'xlsx'; // Install npm i xlsx --save
 
 @Component({
@@ -14,7 +16,7 @@ export class UsersComponent implements OnInit {
   fileName = 'ExcelSheet.xlsx';
   name: string;
 
-  constructor(private profileService: ProfileService) { }
+  constructor(private profileService: ProfileService, private router: Router, private firebaseService: FirebaseService) { }
 
   ngOnInit(): void {
     // Get single User Informations
@@ -51,6 +53,14 @@ export class UsersComponent implements OnInit {
     } else if (this.name == "") {
       this.ngOnInit()
     }
+  }
+
+  // Sign User Out
+  logOut() {
+    this.firebaseService.signout()
+
+    // Return to Home page
+    this.router.navigate(['/'])
   }
 
 }
