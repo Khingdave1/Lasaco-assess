@@ -1,5 +1,10 @@
 @import "../../../assets/css/auth.css";
 
+.header {
+}
+.header i {
+  margin: 0 0.5rem;
+}
 /* Modal starts */
 .modal-area {
   position: fixed;

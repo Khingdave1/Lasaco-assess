@@ -1,0 +1,56 @@
+.sect {
+  /* height: 100vh; */
+}
+.admin-header {
+  margin-bottom: 2rem;
+}
+.admin-body {
+  width: 70%;
+  margin: auto;
+}
+/* Cards starts */
+.card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.card-item {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  margin-top: 5rem;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  visibility: visible;
+  transition: all 0.4s ease-in;
+}
+.card-item:hover .icon i {
+  transform: rotate(360deg);
+}
+@media only screen and (min-width: 450px) {
+  .card-item {
+    width: 350px;
+    flex-basis: auto;
+  }
+}
+.card-item .icon {
+  width: 60px;
+  height: 60px;
+  margin: -40px 0 1rem 0;
+  visibility: visible;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.card-item .icon i {
+  font-size: 24px;
+  transition: all 0.4s ease-in;
+}
+.card-item p {
+  margin: 1rem 0 0.5rem 0;
+}
+/* ba card ends */
+/* Cards ends */

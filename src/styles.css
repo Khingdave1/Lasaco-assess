@@ -121,7 +121,7 @@ h1 {
   /* font-size: 34px; */
 }
 h2 {
-  font-size: 36px;
+  font-size: 30px;
   line-height: 44px;
   font-weight: 600;
 }
@@ -156,6 +156,7 @@ p {
 }
 .sect {
   padding: 3rem 0;
+  min-height: calc(100vh - 5rem);
 }
 @media only screen and (max-width: 870px) {
   .sect {

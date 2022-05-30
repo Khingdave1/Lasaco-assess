@@ -1,0 +1,61 @@
+<section class="sect">
+  <div class="container">
+    <div class="header dis-flex">
+      <div class="dis-flex breadcrumbs">
+        <h2 class="clickable" routerLink="/admin/overview">Admin</h2>
+        <i class="bx bx-chevron-right"></i>
+        <p>User</p>
+      </div>
+      <div class="right dis-flex">
+        <div class="search-field dis-flex">
+          <i class="bx bx-search"></i>
+          <input
+            type="text"
+            placeholder="Type name to search..."
+            [(ngModel)]="name"
+            (input)="search()"
+          />
+        </div>
+        <div class="btns dis-flex">
+          <button
+            class="btn sec-btn"
+            (click)="exportExcel()"
+            title="Export to Excel"
+          >
+            Download
+          </button>
+          <button
+            class="btn prim-btn"
+            routerLink="/admin/overview"
+            title="Create New User"
+          >
+            Add New
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Table -->
+    <table id="users-table">
+      <tr class="table-header">
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Score Percentage</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+      <tr class="table-body clickable" *ngFor="let i of users">
+        <td class="name">{{ i.fullName | titlecase }}</td>
+        <td class="">
+          {{ i.emailAddress }}
+        </td>
+        <td>{{ i.role }}</td>
+        <td class="quadrant">{{ i.scorePercentage }}</td>
+        <td class="status">Status</td>
+        <td class="actions">
+          <span> Delete </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+</section>

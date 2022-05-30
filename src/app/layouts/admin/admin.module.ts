@@ -6,6 +6,8 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { CreateUserComponent } from 'src/app/modules/create-user/create-user.component';
+import { AdminOverviewComponent } from 'src/app/modules/admin-overview/admin-overview.component';
+import { UsersComponent } from 'src/app/modules/users/users.component';
 
 
 
@@ -13,7 +15,9 @@ import { CreateUserComponent } from 'src/app/modules/create-user/create-user.com
   declarations: [
     AdminComponent,
     AdminLoginComponent,
-    CreateUserComponent
+    AdminOverviewComponent,
+    CreateUserComponent,
+    UsersComponent
   ],
   imports: [
     CommonModule,

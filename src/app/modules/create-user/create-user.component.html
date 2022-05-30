@@ -1,70 +1,83 @@
-<div class="auth">
-  <div class="auth-content">
-    <div class="auth-content-head">
-      <h2 class="dis-flex">Create User Account</h2>
+<section class="sect">
+  <div class="container">
+    <div class="dis-flex header">
+      <h2 class="clickable" routerLink="/admin/overview">Admin</h2>
+      <i class="bx bx-chevron-right"></i>
+      <p>Create user</p>
     </div>
-    <form
-      class="auth-content-form"
-      (ngSubmit)="createUser()"
-      [formGroup]="createUserForm"
-    >
-      <div class="form-control">
-        <input type="text" placeholder="Full Name" formControlName="fullName" />
-      </div>
-      <div class="form-control">
-        <input type="email" placeholder="Email" formControlName="email" />
-      </div>
-      <div class="form-control">
-        <input
-          type="tel"
-          placeholder="Phone Number"
-          formControlName="telNumber"
-        />
-      </div>
-      <div class="form-control">
-        <!-- <select name="" id="">
-          <option value="none" selected disabled hidden>
-            Please select Role
-          </option>
-          <option value="">Entry Level</option>
-          <option value="">Internship</option>
-          <option value="">Driver</option>
-        </select> -->
-        <select formControlName="role">
-          <option *ngFor="let item of roles" [value]="item.value">
-            {{ item.viewValue }}
-          </option>
-        </select>
-      </div>
-      <div class="form-control">
-        <input
-          placeholder="Password"
-          formControlName="password"
-          [type]="hide ? 'password' : 'text'"
-        />
-        <img
-          [src]="
-            hide
-              ? '../../../assets/img/bx-show.svg'
-              : '../../../assets/img/bx-hide.svg'
-          "
-          class="clickable"
-          (click)="hide = !hide"
-        />
-      </div>
-      <!-- Warning -->
-      <p class="warning-msg">Password must be at least 6 characters</p>
-      <!-- Error -->
-      <span class="rc">{{ errorMessage }}</span>
-      <div class="form-btn">
-        <button class="btn prim-btn clickable" (click)="createUser()">
-          <span *ngIf="loading">Loading...</span>
-          <span *ngIf="!loading">Create</span>
-        </button>
-      </div>
-    </form>
   </div>
-</div>
+  <div class="auth">
+    <div class="auth-content">
+      <div class="auth-content-head">
+        <h2 class="dis-flex">Create User Account</h2>
+      </div>
+      <form
+        class="auth-content-form"
+        (ngSubmit)="createUser()"
+        [formGroup]="createUserForm"
+      >
+        <div class="form-control">
+          <input
+            type="text"
+            placeholder="Full Name"
+            formControlName="fullName"
+          />
+        </div>
+        <div class="form-control">
+          <input type="email" placeholder="Email" formControlName="email" />
+        </div>
+        <div class="form-control">
+          <input
+            type="tel"
+            placeholder="Phone Number"
+            formControlName="telNumber"
+          />
+        </div>
+        <div class="form-control">
+          <!-- <select name="" id="">
+            <option value="none" selected disabled hidden>
+              Please select Role
+            </option>
+            <option value="">Entry Level</option>
+            <option value="">Internship</option>
+            <option value="">Driver</option>
+          </select> -->
+          <select formControlName="role">
+            <option *ngFor="let item of roles" [value]="item.value">
+              {{ item.viewValue }}
+            </option>
+          </select>
+        </div>
+        <div class="form-control">
+          <input
+            placeholder="Password"
+            formControlName="password"
+            [type]="hide ? 'password' : 'text'"
+          />
+          <img
+            [src]="
+              hide
+                ? '../../../assets/img/bx-show.svg'
+                : '../../../assets/img/bx-hide.svg'
+            "
+            class="clickable"
+            (click)="hide = !hide"
+          />
+        </div>
+        <!-- Warning -->
+        <p class="warning-msg">Password must be at least 6 characters</p>
+        <!-- Error -->
+        <span class="rc">{{ errorMessage }}</span>
+        <div class="form-btn">
+          <button class="btn prim-btn clickable" (click)="createUser()">
+            <span *ngIf="loading">Loading...</span>
+            <span *ngIf="!loading">Create</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
 
 <div class="modal-area" [class.show-modal]="userDetailsPopup">
   <div class="modal">

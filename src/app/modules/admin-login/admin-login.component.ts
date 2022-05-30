@@ -59,7 +59,7 @@ export class AdminLoginComponent implements OnInit {
     if (this.firebaseService.isLogggedIn === true) {
       this.isSignedin = true
       // Navigate to Dashboard
-      this.router.navigate(['admin/create-user'])
+      this.router.navigate(['/admin/overview'])
       // alert('Welcome ' + payload.emailAddress)
     }
   }

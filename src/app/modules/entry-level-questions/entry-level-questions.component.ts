@@ -111,7 +111,7 @@ export class EntryLevelQuestionsComponent implements OnInit {
   submitTest() {
     this.isTestCompleted = true
     this.pauseTimer()
-    this.pointsPercentage = (this.points / this.totalPoints) * 100
+    this.pointsPercentage = Math.floor((this.points / this.totalPoints) * 100)
 
     // Update user profile
     this.updateUserProfile()

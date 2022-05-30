@@ -16,6 +16,8 @@ import { InternComponent } from './modules/intern/intern.component';
 import { QuestionsComponent } from './modules/questions/questions.component';
 import { NyscComponent } from './modules/nysc/nysc.component';
 import { NyscQuestionsComponent } from './modules/nysc-questions/nysc-questions.component';
+import { AdminOverviewComponent } from './modules/admin-overview/admin-overview.component';
+import { UsersComponent } from './modules/users/users.component';
 
 const routes: Routes = [
   {
@@ -127,6 +129,24 @@ const routes: Routes = [
           title: 'Admin Login',
           description: 'Description Meta Tag Content'
         }
+      },
+      {
+        path: 'overview',
+        component: AdminOverviewComponent,
+        data: {
+          title: 'Admin Login',
+          description: 'Description Meta Tag Content'
+        },
+        canActivate: [AuthGuard]
+      },
+      {
+        path: 'users',
+        component: UsersComponent,
+        data: {
+          title: 'Users',
+          description: 'Description Meta Tag Content'
+        },
+        canActivate: [AuthGuard]
       },
       {
         path: 'create-user',
