@@ -118,7 +118,7 @@ export class EntryLevelQuestionsComponent implements OnInit {
 
     // Route back to home page
     setTimeout(() => {
-      this.logOut()
+      // this.logOut()
     }, 30000);
   }
 
