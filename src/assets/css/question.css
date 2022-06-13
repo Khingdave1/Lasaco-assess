@@ -36,6 +36,9 @@
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
 }
+.list-item .image {
+  margin-bottom: 1rem;
+}
 .list-item h3 {
   margin-bottom: 0.5rem;
 }

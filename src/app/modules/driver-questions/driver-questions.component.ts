@@ -57,7 +57,7 @@ export class DriverQuestionsComponent implements OnInit {
 
   // Get all Questions from Json
   getAllQuestions() {
-    this.questionService.getQuestionJson('questions').subscribe((res) => {
+    this.questionService.getQuestionJson('driverquestion').subscribe((res) => {
       this.result = res
 
       // Number of Questions

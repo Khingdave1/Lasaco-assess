@@ -1,0 +1,485 @@
+{
+  "questions": [
+    {
+      "questionText": "What does this sign mean?",
+      "options": [
+        {
+          "text": "You must not turn to the right"
+        },
+        {
+          "text": "You must not turn to the right or left",
+          "correct": true
+        },
+        {
+          "text": "You must not turn to the left "
+        }
+      ],
+      "image": "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782824/Lasaco%20assest%20driver%20images%20/1_hcnnt2.png"
+    },
+    {
+      "questionText": "When you see this sign, you should: ",
+      "options": [
+        {
+          "text": " Stop in the middle of the railway tracks and look both ways for approaching trains."
+        },
+        {
+          "text": "Slow down and be prepared to stop if the lights start flashing, warning you of an approaching train."
+        },
+        {
+          "text": "Slow down and be prepared to stop if the lights start flashing, warning you of an approaching train.",
+          "correct": true
+        }
+      ],
+      "image": "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782823/Lasaco%20assest%20driver%20images%20/2_non1dj.png"
+    },
+    {
+      "questionText": "What does this sign mean?",
+      "options": [
+        {
+          "text": "Vehicles must not stop at the kerb, unless picking up goods."
+        },
+        {
+          "text": "Vehicles must not stop at the kerb, except if picking up a passenger."
+        },
+        {
+          "text": "Vehicles are not allowed to stop at the kerb except in a medical emergency ",
+          "correct": true
+        }
+      ],
+      "image": "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782824/Lasaco%20assest%20driver%20images%20/3_r7zlvr.png"
+    },
+    {
+      "questionText": "You should expect this sign:",
+      "options": [
+        {
+          "text": "If a one lane bridge is ahead."
+        },
+        {
+          "text": "When a divided road ends and two-way traffic is ahead."
+        },
+        {
+          "text": "If a One-way street is ahead.",
+          "correct": true
+        }
+      ],
+      "image": "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782823/Lasaco%20assest%20driver%20images%20/4_ski98j.png"
+    },
+    {
+      "questionText": "What does this sign mean? ",
+      "options": [
+        {
+          "text": "One way traffic ahead.",
+          "correct": true
+        },
+        {
+          "text": "You are approaching a roundabout, prepare to give way."
+        },
+        {
+          "text": "Stop sign ahead, slow down and prepare to stop."
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782818/Lasaco%20assest%20driver%20images%20/5_pgvjen.png"
+    },
+    {
+      "questionText": "What does this sign mean?",
+      "options": [
+        {
+          "text": "Police station ahead"
+        },
+        {
+          "text": "A sharp depression in the road is ahead, be prepared, slow down."
+        },
+        {
+          "text": "Do not drive with your lights on high beam.",
+          "correct": true
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782818/Lasaco%20assest%20driver%20images%20/6_vgcpff.png"
+    },
+    {
+      "questionText": "When you see this sign, you should",
+      "options": [
+        {
+          "text": "Not drive beyond the sign."
+        },
+        {
+          "text": "Drive with caution"
+        },
+        {
+          "text": "Not pass another vehicle.",
+          "correct": true
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782816/Lasaco%20assest%20driver%20images%20/7_wtvzgu.png"
+    },
+    {
+      "questionText": "What does this sign mean?",
+      "options": [
+        {
+          "text": "All traffic must travel in the direction of the arrow."
+        },
+        {
+          "text": "Follow the arrow unless you are turning right.",
+          "correct": true
+        },
+        {
+          "text": "Road curves to the left ahead."
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782813/Lasaco%20assest%20driver%20images%20/8_j61ndp.png"
+    },
+    {
+      "questionText": "You should expect this sign, when: ",
+      "options": [
+        {
+          "text": "Freeway conditions are ahead, maximum speed is 100km/h."
+        },
+        {
+          "text": "A two-lane bridge is ahead, slow down and drive carefully."
+        },
+        {
+          "text": "A divided road is ahead, prepare for a change in traffic conditions.",
+          "correct": true
+        }
+      ],
+      "image"  : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782813/Lasaco%20assest%20driver%20images%20/9_hyopdb.png"
+    },
+	{
+      "questionText": "When you see this sign,you must?",
+      "options": [
+        {
+          "text": "Slow down and be prepared to give way to traffic on your right only, if there is any danger of a collision.",
+          "correct": true
+        },
+        {
+          "text": "Slow down and be prepared to stop and give way to all traffic if there is any danger of a collision"
+        },
+        {
+          "text": "Stop and give way to all traffic even if the intersection is clear."
+        }
+      ],
+      "image" :"https://res.cloudinary.com/dppv3qx09/image/upload/v1654782813/Lasaco%20assest%20driver%20images%20/10_tipihs.png"
+    },
+	{
+      "questionText": "What does this sign mean?",
+      "options": [
+        {
+          "text": "Give way sign ahead, slow down and be prepared to stop."
+        },
+        {
+          "text": "Railway level crossing ahead, slow down and look out for trains, be prepared to stop."
+        },
+        {
+          "text": "Cattle or sheep crossing the road ahead, drive slowly.",
+          "correct": true
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782813/Lasaco%20assest%20driver%20images%20/11_zowlvq.png"
+    },
+	{
+      "questionText": "When you see this sign you",
+      "options": [
+        {
+          "text": "Must not stop your vehicle at the kerb during the times shown."
+        },
+        {
+          "text": "Must not stop here at any time."
+        },
+        {
+          "text": "May stop at any time to pick up or drop off passengers.",
+          "correct": true
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782812/Lasaco%20assest%20driver%20images%20/12_oyyvjv.png"
+    },
+	{
+      "questionText": "What does this sign mean? ",
+      "options": [
+        {
+          "text": "One way traffic ahead"
+        },
+        {
+          "text": "Right lane traffic may turn right or go straight ahead at the next intersection",
+          "correct": true
+        },
+        {
+          "text": "All right lane traffic must turn right at the next intersection."
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782812/Lasaco%20assest%20driver%20images%20/13_s2drpt.png"
+    },
+	{
+      "questionText": "What does this sign mean?",
+      "options": [
+        {
+          "text": "You are on Highway 60.",
+          "correct": true
+        },
+        {
+          "text": "You can go faster than 60 km/h."
+        },
+        {
+          "text": "You are not to exceed 60 km/h."
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782811/Lasaco%20assest%20driver%20images%20/14_jrtonm.png"
+    },
+	{
+      "questionText": "What does this sign mean? ",
+      "options": [
+        {
+          "text": "Stop at all times and give way to all traffic."
+        },
+        {
+          "text": "If traffic lights are out of order or the amber light is flashing, you must stop and give way to traffic as if you are at an intersection with stop signs."
+        },
+        {
+          "text": "Stop, red light camera in operation.",
+          "correct": true
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782811/Lasaco%20assest%20driver%20images%20/15_drjy1t.png"
+    },
+	{
+      "questionText": "What does this sign mean? ",
+      "options": [
+        {
+          "text": "Road under repair, slow down."
+        },
+        {
+          "text": "Steep down-grade in the road ahead, slow down."
+        },
+        {
+          "text": "Road ahead slippery when wet, drive carefully.",
+          "correct": true
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782811/Lasaco%20assest%20driver%20images%20/16_w08s6s.png"
+    },
+	{
+      "questionText": "When you see this sign, you should: ",
+      "options": [
+        {
+          "text": "Take a break, rest area ahead.",
+          "correct": true
+        },
+        {
+          "text": "Take care, trucks crossing the road ahead."
+        },
+        {
+          "text": "Drive carefully and watch out for traffic entering from a side-road intersection ahead."
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782811/Lasaco%20assest%20driver%20images%20/17_mdpxg9.png"
+    },
+	{
+      "questionText": "What does this sign mean? ",
+      "options": [
+        {
+          "text": "Traffic travels in each direction. ",
+          "correct": true
+        },
+        {
+          "text": "No turns permitted."
+        },
+        {
+          "text": "Double lane bridge ahead."
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782811/Lasaco%20assest%20driver%20images%20/18_nzf4lp.png"
+    },
+	{
+      "questionText": "What does this sign mean? ",
+      "options": [
+        {
+          "text": "Tollway ahead, be prepared to stop and pay toll."
+        },
+        {
+          "text": "No through road ahead, slow down.",
+          "correct": true
+        },
+        {
+          "text": "T-intersection ahead. If you are on the terminating road, you must give way to all vehicles approaching from your right or left."
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782810/Lasaco%20assest%20driver%20images%20/19_jrgfo8.png"
+    },
+    {
+      "questionText": "What does this sign mean?",
+      "options": [
+        {
+          "text": "Do not litter"
+        },
+        {
+          "text": "Children's playground ahead, slow down and be prepared to stop."
+        },
+        {
+          "text": "Workers ahead, slow down and be prepared to stop.",
+          "correct": true
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782810/Lasaco%20assest%20driver%20images%20/20_shoqbg.png"
+    },
+    {
+      "questionText": "What does this sign tell you? ",
+      "options": [
+        {
+          "text": "You are approaching an animal farm.",
+          "correct": true
+        },
+        {
+          "text": "There may be animals on or near the road ahead, slow down and be prepared to stop to avoid collision."
+        },
+        {
+          "text": "Animals are crossing the road ahead, stop and wait for directions."
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782810/Lasaco%20assest%20driver%20images%20/21_ljegr6.png"
+    },
+	{
+      "questionText": "What does this sign mean?",
+      "options": [
+        {
+          "text": "You must not drive faster than 100 km/h."
+        },
+        {
+          "text": "You must drive faster than 100 km/h",
+          "correct": true
+        },
+        {
+          "text": "The sign applies to truck drivers only, cars can travel at any speed."
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782810/Lasaco%20assest%20driver%20images%20/22_xn3avc.png"
+    },
+	{
+      "questionText": "What does this sign mean? ",
+      "options": [
+        {
+          "text": "Vehicles may park in this area for up to ten minutes."
+        },
+        {
+          "text": "Motorcyclists may park in this area."
+        },
+        {
+          "text": "Only vehicles carrying a disable person and displaying a mobility parking authority may park in this area.",
+          "correct": true
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782810/Lasaco%20assest%20driver%20images%20/23_fuf1m3.png"
+    },
+	{
+      "questionText": "If y is an integer, is it an odd number? (1)y3 ≥ 0 (2)y is either an odd number or a negative number",
+      "options": [
+        {
+          "text": "Drive carefully, roundabout ahead."
+        },
+        {
+          "text": "Pass to the left of the sign."
+        },
+        {
+          "text": "Turn left at next street.",
+          "correct": true
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782809/Lasaco%20assest%20driver%20images%20/24_u9lfo7.png"
+    },
+	{
+      "questionText": "What does this sign mean? ",
+      "options": [
+        {
+          "text": "One lane bridge ahead, slow down."
+        },
+        {
+          "text": "You may travel only in the direction in which the arrow is pointing."
+        },
+        {
+          "text": "No left turn.",
+          "correct": true
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782810/Lasaco%20assest%20driver%20images%20/25_vzohmq.png"
+    },
+	{
+      "questionText": "What does this sign mean? ",
+      "options": [
+        {
+          "text": "Hospital ahead, slow down and proceed with caution.",
+          "correct": true
+        },
+        {
+          "text": "Stop and help aged pedestrians across the road."
+        },
+        {
+          "text": "Slow down and look out for pedestrians crossing the road ahead."
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782809/Lasaco%20assest%20driver%20images%20/26_fanqzy.png"
+    },
+	{
+      "questionText": "You are most likely to find this sign: ",
+      "options": [
+        {
+          "text": "If there is a footbridge for pedestrians ahead."
+        },
+        {
+          "text": "On the approach to a bridge which has room for only two vehicles, slow down and proceed with caution."
+        },
+        {
+          "text": "When a bridge is not safe to drive on.",
+          "correct": true
+        }
+      ],
+      "image" :"https://res.cloudinary.com/dppv3qx09/image/upload/v1654782809/Lasaco%20assest%20driver%20images%20/27_y4pj90.png"
+    },
+	{
+      "questionText": "",
+      "options": [
+        {
+          "text": "Watch out for bicycle riders along the roadway or when turning.",
+          "correct": true
+        },
+        {
+          "text": "Bicycle riders not allowed on the roadway."
+        },
+        {
+          "text": "You are approaching a children's playground, slow down."
+        }
+      ],
+      "image" :"https://res.cloudinary.com/dppv3qx09/image/upload/v1654782809/Lasaco%20assest%20driver%20images%20/28_lbvjyz.png"
+    },
+	{
+      "questionText": "What does this sign mean? ",
+      "options": [
+        {
+          "text": "Heavy vehicle checking station ahead."
+        },
+        {
+          "text": "Slow down and beware of trucks entering from the side.",
+          "correct": true
+        },
+        {
+          "text": "Trucks must use low gear."
+        }
+      ],
+      "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782809/Lasaco%20assest%20driver%20images%20/29_cexisu.png"
+    },
+    {
+        "questionText": "What does this sign mean? ",
+        "options": [
+          {
+            "text": "Cemetery ahead."
+          },
+          {
+            "text": "Crossroads ahead, reduce your speed and watch out for other traffic and pedestrians.",
+            "correct": true
+          },
+          {
+            "text": "Hospital ahead, drive carefully."
+          }
+        ],
+        "image" : "https://res.cloudinary.com/dppv3qx09/image/upload/v1654782809/Lasaco%20assest%20driver%20images%20/30_uqlgfp.png"
+      }
+		
+  ]
+}

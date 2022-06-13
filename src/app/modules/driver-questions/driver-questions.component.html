@@ -21,6 +21,11 @@
       </div>
       <div class="test-body list">
         <div class="list-item">
+          <img
+            [src]="questionsList[currentQuestion]?.image"
+            alt=""
+            class="image"
+          />
           <h4>{{ questionsList[currentQuestion]?.questionText }}</h4>
           <div class="options">
             <label
