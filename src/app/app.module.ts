@@ -14,11 +14,13 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
 import { AdminModule } from './layouts/admin/admin.module';
 import { ChangeBgDirective } from './directives/change-bg.directive';
+import { ParentComponent } from './modules/parent/parent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChangeBgDirective,
+    ParentComponent,
   ],
   imports: [
     BrowserModule,
