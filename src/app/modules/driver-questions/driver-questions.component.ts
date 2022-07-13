@@ -35,6 +35,8 @@ export class DriverQuestionsComponent implements OnInit {
   userId: any;
   users: any;
   user: any;
+  submitModal: boolean = false;
+
 
   constructor(private http: HttpClient, private questionService: QuestionService, private router: Router, private profileService: ProfileService, private firebaseService: FirebaseService) {
   }
@@ -112,6 +114,7 @@ export class DriverQuestionsComponent implements OnInit {
   // Submit Test
   submitTest() {
     this.isTestCompleted = true
+    this.submitModal = false
     this.pauseTimer()
     this.pointsPercentage = Math.floor((this.points / this.totalPoints) * 100)
 
@@ -183,6 +186,15 @@ export class DriverQuestionsComponent implements OnInit {
 
     // Return to Home page
     this.router.navigate(['/'])
+  }
+
+  // Show Confirm Submit Modal
+  showSubmitModal() {
+    this.submitModal = true
+  }
+
+  hideSubmitModal() {
+    this.submitModal = false
   }
 
 }

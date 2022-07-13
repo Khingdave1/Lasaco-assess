@@ -42,16 +42,16 @@
       <div class="test-footer dis-flex">
         <button
           [disabled]="currentQuestion === 0"
-          class="carousel-btn dis-flex"
+          class="btn carousel-btn dis-flex"
           (click)="previousQuestion()"
         >
           <i class="bx bx-chevron-left"></i> Previous
         </button>
-        <button class="submit-btn dis-flex" (click)="submitTest()">
+        <button class="btn success-btn dis-flex" (click)="showSubmitModal()">
           Submit
         </button>
         <button
-          class="carousel-btn dis-flex"
+          class="btn carousel-btn dis-flex"
           (click)="nextQuestion()"
           [disabled]="currentQuestion + 1 === questionsList?.length"
         >
@@ -60,6 +60,7 @@
       </div>
     </ng-container>
 
+    <!-- Test Result -->
     <ng-container *ngIf="isTestCompleted">
       <div class="test-result-container dis-flex">
         <img
@@ -84,6 +85,28 @@
           </p>
         </div>
       </div>
+
+      <div class="go-back">
+        <button class="btn prim-btn" routerLink="/">Go back home</button>
+      </div>
     </ng-container>
   </div>
 </section>
+
+<!-- Modal Area -->
+<div class="modal-area" [class.show-modal]="submitModal">
+  <div class="modal delete-modal">
+    <div class="modal-head">
+      <h3>Dear {{ user?.fullName }}</h3>
+    </div>
+    <div class="modal-body">
+      <p>Are you sure you want to Submit your test?</p>
+      <div class="modal-body-btns dis-flex">
+        <button class="btn danger-btn" (click)="submitModal = false">
+          Cancel
+        </button>
+        <button class="btn success-btn" (click)="submitTest()">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

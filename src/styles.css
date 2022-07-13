@@ -5,7 +5,8 @@
   --blue-color: rgb(38, 221, 249);
   --white-color: #ffffff;
   --grey-color1: rgb(247, 247, 247);
-  --danger-color: #ff2e00;
+  --danger-color: #eb5757;
+  --success-color: #00d285;
   --danger-hover-color: #c2a098;
   --box-shadow: -5px 8px 28px -13px rgba(150, 146, 146, 1);
   -webkit-box-shadow: -5px 8px 28px -13px rgba(150, 146, 146, 1);
@@ -65,6 +66,7 @@ textarea {
   font-weight: 500;
   text-align: center;
   outline: none;
+  border: 2px solid transparent;
   transition: all 0.4s;
   border-radius: calc(var(--border-radius) + 30px);
   background-color: transparent;
@@ -95,6 +97,21 @@ textarea {
 .tert-btn:hover {
   background-color: rgb(124, 234, 251);
 }
+.success-btn {
+  background-color: var(--success-color);
+  color: var(--white-color);
+  border-radius: 3px;
+}
+.success-btn:hover {
+  background-color: transparent;
+  color: var(--success-color);
+  border-color: var(--success-color);
+}
+.danger-btn {
+  background-color: var(--danger-color);
+  color: var(--white-color);
+  border-radius: 3px;
+}
 /* Buttons ends */
 
 .clickable {
@@ -108,10 +125,10 @@ textarea {
   align-items: center;
 }
 .gc {
-  color: #00d285;
+  color: var(--success-color);
 }
 .rc {
-  color: #eb5757;
+  color: var(--danger-color);
 }
 /* Headings starts */
 h1 {

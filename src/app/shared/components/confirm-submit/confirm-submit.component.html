@@ -1,0 +1,10 @@
+<div class="modal-head">
+  <h3>Dear {{ user?.fullName }}</h3>
+</div>
+<div class="modal-body">
+  <p>Are you sure you want to Submit your test?</p>
+  <div class="modal-body-btns dis-flex">
+    <button class="btn danger-btn" (click)="closeSubmitModal()">Cancel</button>
+    <button class="btn success-btn">Submit</button>
+  </div>
+</div>
