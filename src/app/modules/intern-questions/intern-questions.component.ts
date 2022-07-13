@@ -27,7 +27,7 @@ export class InternQuestionsComponent implements OnInit {
   selected: boolean = false;
   isTestCompleted: boolean = false;
   totalAttemptedQuestion: number = 0;
-  testDuration: number = 3600; //In seconds
+  testDuration: number = 5400; //In seconds
   testDurationMinute: number = 1;
   display: any;
   interval: any;
