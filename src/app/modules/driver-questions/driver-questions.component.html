@@ -5,7 +5,8 @@
         <h3 class="test-header-title">Welcome {{ user?.fullName }}</h3>
         <p class="test-header-instruct">
           This quiz contains <b>{{ questionsList?.length }}</b> Questions. Each
-          questions holds <b>{{ pointValue }}</b> points
+          questions holds <b>{{ pointValue }}</b> points, and you can only
+          select once.
         </p>
         <p class="test-header-instruct">
           You have <b>{{ testDurationMinute }} minutes</b> to complete this Test
@@ -45,13 +46,13 @@
         </div>
       </div>
       <div class="test-footer dis-flex">
-        <button
+        <!-- <button
           [disabled]="currentQuestion === 0"
           class="btn carousel-btn dis-flex"
           (click)="previousQuestion()"
         >
           <i class="bx bx-chevron-left"></i> Previous
-        </button>
+        </button> -->
         <button class="btn success-btn dis-flex" (click)="showSubmitModal()">
           Submit
         </button>
