@@ -30,7 +30,7 @@
                 let option of questionsList[currentQuestion]?.options;
                 let indexOfelement = index
               "
-              (click)="answer(currentQuestion + 1, option, $event)"
+              (change)="answer(currentQuestion + 1, option, $event)"
               ><input
                 type="radio"
                 [name]="currentQuestion"

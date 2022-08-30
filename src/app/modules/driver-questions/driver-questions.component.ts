@@ -6,14 +6,12 @@ import { ProfileService } from 'src/app/services/profile.service';
 import { Profile } from 'src/app/interfaces/profile';
 import { FirebaseService } from 'src/app/services/firebase.service';
 
-
 @Component({
   selector: 'app-driver-questions',
   templateUrl: './driver-questions.component.html',
-  styleUrls: ['./driver-questions.component.css']
+  styleUrls: ['./driver-questions.component.css'],
 })
 export class DriverQuestionsComponent implements OnInit {
-
   public allQuestionsList: any = [];
   public questionsList: any = [];
   public result: any;
@@ -37,38 +35,45 @@ export class DriverQuestionsComponent implements OnInit {
   user: any;
   submitModal: boolean = false;
 
-
-  constructor(private http: HttpClient, private questionService: QuestionService, private router: Router, private profileService: ProfileService, private firebaseService: FirebaseService) {
-  }
+  constructor(
+    private http: HttpClient,
+    private questionService: QuestionService,
+    private router: Router,
+    private profileService: ProfileService,
+    private firebaseService: FirebaseService
+  ) {}
 
   ngOnInit(): void {
-    this.getAllQuestions()
-    this.startTimer()
+    this.getAllQuestions();
+    this.startTimer();
 
     // Get single User Informations
-    this.userId = JSON.parse(localStorage.getItem('id') || '{}')
-    this.users = this.profileService.getSingleUser(this.userId).subscribe((res: any) => {
-      res.forEach((r: any) => {
-        let item = r.payload.doc.data() as Profile
-        item.id = r.payload.doc.id
-        this.user = item
+    this.userId = JSON.parse(localStorage.getItem('id') || '{}');
+    this.users = this.profileService
+      .getSingleUser(this.userId)
+      .subscribe((res: any) => {
+        res.forEach((r: any) => {
+          let item = r.payload.doc.data() as Profile;
+          item.id = r.payload.doc.id;
+          this.user = item;
+        });
       });
-    })
-
   }
 
   // Get all Questions from Json
   getAllQuestions() {
     this.questionService.getQuestionJson('driverquestion').subscribe((res) => {
-      this.result = res
+      this.result = res;
 
       // Number of Questions
-      const size = 15
+      const size = 15;
       this.allQuestionsList = this.result.questions;
       // Display n random questions from the QuestionList
-      this.questionsList = this.allQuestionsList.sort(() => Math.random() - Math.random()).slice(0, size)
+      this.questionsList = this.allQuestionsList
+        .sort(() => Math.random() - Math.random())
+        .slice(0, size);
       // Total points
-      this.totalPoints = this.questionsList.length * this.pointValue
+      this.totalPoints = this.questionsList.length * this.pointValue;
     });
   }
 
@@ -78,52 +83,46 @@ export class DriverQuestionsComponent implements OnInit {
     // element.classList.add("selected")
     // If last question
     if (currentQno === this.questionsList.length) {
-      this.currentQuestion--
+      this.currentQuestion--;
     }
     if (option.correct) {
       this.points += 10;
-      this.correctAnswer++
+      this.correctAnswer++;
       // this.resetCounter()
-      setTimeout(() => {
-        this.currentQuestion++
-      }, 1000);
-      // this.totalAttemptedQuestion++
-
     } else {
-      this.inCorrectAnswer++
+      this.inCorrectAnswer++;
       // this.resetCounter()
-      setTimeout(() => {
-        this.currentQuestion++
-      }, 1000);
-      // this.point -= 10
     }
-    this.totalAttemptedQuestion++
+    this.totalAttemptedQuestion++;
+
+    setTimeout(() => {
+      this.currentQuestion++;
+    }, 1000);
   }
 
   // Next Question
   nextQuestion() {
-    this.currentQuestion++
-
+    this.currentQuestion++;
   }
 
   // Previous Question
   previousQuestion() {
-    this.currentQuestion--
+    this.currentQuestion--;
   }
 
   // Submit Test
   submitTest() {
-    this.isTestCompleted = true
-    this.submitModal = false
-    this.pauseTimer()
-    this.pointsPercentage = Math.floor((this.points / this.totalPoints) * 100)
+    this.isTestCompleted = true;
+    this.submitModal = false;
+    this.pauseTimer();
+    this.pointsPercentage = Math.floor((this.points / this.totalPoints) * 100);
 
     // Update user profile
-    this.updateUserProfile()
+    this.updateUserProfile();
 
     // Route back to home page
     setTimeout(() => {
-      this.logOut()
+      this.logOut();
     }, 30000);
   }
 
@@ -133,37 +132,40 @@ export class DriverQuestionsComponent implements OnInit {
       if (this.testDuration !== 0) {
         this.testDuration--;
       } else {
-        this.isTestCompleted = true
-        this.pauseTimer()
-        this.submitTest()
+        this.isTestCompleted = true;
+        this.pauseTimer();
+        this.submitTest();
       }
-      this.display = this.transform(this.testDuration)
+      this.display = this.transform(this.testDuration);
     }, 1000);
   }
   // Transform the time from seconds to Minutes : seconds
   transform(value: number): string {
-    const hour: number = Math.floor(value / 3600)
-    const minutes: number = Math.floor(((value - (hour * 3600)) / 60));
-    return hour + ':' + minutes + ':' + (value - (hour * 3600) - (minutes * 60));
+    const hour: number = Math.floor(value / 3600);
+    const minutes: number = Math.floor((value - hour * 3600) / 60);
+    return hour + ':' + minutes + ':' + (value - hour * 3600 - minutes * 60);
   }
   // Pause Timer
   pauseTimer() {
     clearInterval(this.interval);
-    this.testDuration = 0
+    this.testDuration = 0;
   }
 
   // Update User profile
   updateUserProfile() {
     // Get current timestamp
-    const currTime = Number(new Date())
+    const currTime = Number(new Date());
 
     // Convert timestamp into readable time string
-    const readableTime = new Date(currTime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) //Display without seconds
+    const readableTime = new Date(currTime).toLocaleTimeString([], {
+      hour: '2-digit',
+      minute: '2-digit',
+    }); //Display without seconds
 
     // Convert timestamp into readable date string
-    const readableDate = new Date(currTime).toDateString()
+    const readableDate = new Date(currTime).toDateString();
 
-    this.timeStamp = readableDate + ', ' + readableTime
+    this.timeStamp = readableDate + ', ' + readableTime;
 
     let payload = {
       testScore: this.points,
@@ -171,30 +173,31 @@ export class DriverQuestionsComponent implements OnInit {
       totalCorrectAnswered: this.correctAnswer,
       totalWrongAnswered: this.inCorrectAnswer,
       scorePercentage: this.pointsPercentage,
-      timeStamp: this.timeStamp
-    }
+      timeStamp: this.timeStamp,
+    };
 
-    this.profileService.updateUser(this.user.id, payload).then(res => {
-    }).catch(err => {
-      console.log(err)
-    })
+    this.profileService
+      .updateUser(this.user.id, payload)
+      .then((res) => {})
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   // Sign User Out
   logOut() {
-    this.firebaseService.signout()
+    this.firebaseService.signout();
 
     // Return to Home page
-    this.router.navigate(['/'])
+    this.router.navigate(['/']);
   }
 
   // Show Confirm Submit Modal
   showSubmitModal() {
-    this.submitModal = true
+    this.submitModal = true;
   }
 
   hideSubmitModal() {
-    this.submitModal = false
+    this.submitModal = false;
   }
-
 }
