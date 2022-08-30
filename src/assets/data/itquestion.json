@@ -703,7 +703,7 @@
       ]
     },
     {
-      "questionText": "You need not come unless you wa",
+      "questionText": "You need not come unless you want",
       "options": [
         {
           "text": "You don't need to come unless you want to",
@@ -793,60 +793,6 @@
       ]
     },
     {
-      "questionText": "The author did not want to shoot the elephant because he",
-      "options": [
-        {
-          "text": "was afraid of it"
-        },
-        {
-          "text": "did not have the experience of shooting big animals",
-          "correct": true
-        },
-        {
-          "text": "did not wish to kill an animal which was not doing anybody any harm"
-        },
-        {
-          "text": "did not find the elephant to be ferocious"
-        }
-      ]
-    },
-    {
-      "questionText": "From the passage, it appears that the authr was",
-      "options": [
-        {
-          "text": "an inexperienced hunter"
-        },
-        {
-          "text": "kind and considerate",
-          "correct": true
-        },
-        {
-          "text": "possessed with fear"
-        },
-        {
-          "text": "a worried man"
-        }
-      ]
-    },
-    {
-      "questionText": "In his dream, Harold found the loathsome creatures",
-      "options": [
-        {
-          "text": "in his village"
-        },
-        {
-          "text": "in his own house"
-        },
-        {
-          "text": "in a different land",
-          "correct": true
-        },
-        {
-          "text": "in hs office"
-        }
-      ]
-    },
-    {
       "questionText": "Which one of the following phrases best helps to bring out the precise meaning of 'loathsome creatures'?",
       "options": [
         {
@@ -861,42 +807,6 @@
         },
         {
           "text": "slug-like animals and security bug"
-        }
-      ]
-    },
-    {
-      "questionText": "The statement that 'he later threw off the security bug'means that",
-      "options": [
-        {
-          "text": "Harold succeeded in overcoming the need for security",
-          "correct": true
-        },
-        {
-          "text": "Harold stopped giving much importance to dreams"
-        },
-        {
-          "text": "Harold started tolerating social victimization"
-        },
-        {
-          "text": "Harold killed all the bugs that troubled me"
-        }
-      ]
-    },
-    {
-      "questionText": "Harold's dream was fearful because",
-      "options": [
-        {
-          "text": "it brought him face to face with reality",
-          "correct": true
-        },
-        {
-          "text": "it was full of vivid pictures of snakes"
-        },
-        {
-          "text": "he saw huge elephant in it"
-        },
-        {
-          "text": "in it he saw slimy creatues feeding on people's bodies"
         }
       ]
     },
